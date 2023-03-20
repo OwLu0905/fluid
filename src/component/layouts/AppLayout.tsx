@@ -19,7 +19,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
       <div className="bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900 min-h-screen flex flex-col">
         <MobileNav />
         <Image
-          src="/banner/ajk_banner.png"
+          src="./banner/ajk_banner.png"
           width={1250}
           height={420}
           style={{ objectFit: "scale-down" }}
