@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navlist from "./navlist";
+import Navlist from "./Navlist";
 
 const MobileNav = () => {
   const [showNav, setShowNav] = useState(true);

@@ -1,6 +1,6 @@
 import React from "react";
 import CoCharis from "../sidebar/CoCharis";
-import Navlist from "../sidebar/navlist";
+import Navlist from "../sidebar/Navlist";
 
 const Sidebar = () => {
   return (
