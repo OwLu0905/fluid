@@ -12,9 +12,9 @@ import Container from "@/component/ui/Container";
 const Home = () => {
   return (
     <>
-      <Container>
-        <HomePage />
-      </Container>
+      {/* <Container> */}
+      <HomePage />
+      {/* </Container> */}
     </>
   );
 };
