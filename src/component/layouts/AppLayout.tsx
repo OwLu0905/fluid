@@ -13,8 +13,8 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         <meta name="description" content="conference" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head> */}
-      {/** <Header> */}
+      </Head>
+      {/** <Header>
       {/* <div className="bg-gradient-to-r from-[#001839]  to-[#001839]/90 min-h-screen flex flex-col"> */}
       <div className="bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900 min-h-screen flex flex-col">
         <MobileNav />
