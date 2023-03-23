@@ -41,7 +41,7 @@ const MobileNav = () => {
   return (
     <>
       {showNav && (
-        <div className="bg-slate-900 text-gray-300 shadow-2xl sticky flex justify-start z-[10] top-0 md:hidden text-sm  shaodw-xl ">
+        <div className="px-2 bg-slate-900 text-gray-300 shadow-2xl sticky flex justify-start z-[10] top-0 md:hidden text-sm  shaodw-xl ">
           <button type="button" onClick={toggleMenuHandler}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

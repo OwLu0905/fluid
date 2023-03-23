@@ -15,12 +15,13 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
   //
   const Layout = (Component as any).Layout || Noop;
 
-  console.log(Component.displayName);
   return (
     <>
       <Head>
         <title>
-          {Component.displayName ? `Fluid-${Component.displayName}` : "Fluid"}
+          {Component.displayName
+            ? `第28屆全國計算流體力學學術研討會-${Component.displayName}`
+            : "第28屆全國計算流體力學學術研討會"}
         </title>
         <meta name="description" content="conference" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

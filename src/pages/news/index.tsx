@@ -1,6 +1,8 @@
-import Image from "next/image";
+import React from "react";
 
-const HomePage = () => {
+import AppLayout from "@/component/layouts/AppLayout";
+
+const News = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/60">
       <h1 className="pb-4 text-xl sm:text-3xl">
@@ -15,4 +17,7 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+News.Layout = AppLayout;
+News.displayName = "最新消息";
+
+export default News;
