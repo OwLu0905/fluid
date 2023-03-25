@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+::selection {
+  color: white;
+  @apply bg-teal-400/80
+}

@@ -22,7 +22,10 @@ const table = [
 const Agenda = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/60">
-      <h1 className="pb-4 text-xl sm:text-3xl">議程</h1>
+
+      <h1 className="pb-4 text-xl sm:text-4xl">
+        議程
+      </h1>
       <table className="border-collapse border border-slate-500 ">
         <thead>
           <tr>

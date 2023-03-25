@@ -58,7 +58,7 @@ const CoCharis = () => {
                   return (
                     <li
                       key={list.name}
-                      className="flex flex-col pb-2 bg-gradient-to-r  text-transparent bg-clip-text from-gray-300/80 to-slate-300/80"
+                      className="flex flex-col pb-2 bg-gradient-to-r text-transparent bg-clip-text from-gray-300/80 to-slate-300/80"
                     >
                       <h4 className="text-lg sm:text-xl mb-1 font-bold">
                         {list.name}
