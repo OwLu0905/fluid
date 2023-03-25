@@ -8,11 +8,13 @@ const menuls = [
   { name: "主頁", href: "/" },
   { name: "最新消息", href: "/news" },
   { name: "議程", href: "/agenda" },
-  { name: "註冊與報名", href: "/a" },
-  { name: "海報論文競賽", href: "/b" },
-  { name: "委員會", href: "/c" },
-  { name: "聯絡資訊", href: "/d" },
-  { name: "交通資訊", href: "/e" },
+  { name: "大會演講", href: "/speech" },
+  { name: "論壇發表", href: "/presentation" },
+  { name: "註冊與報名", href: "/register" },
+  { name: "海報論文競賽", href: "/competition" },
+  { name: "委員會", href: "/committee" },
+  { name: "聯絡資訊", href: "/contact" },
+  { name: "交通資訊", href: "/trafic" },
 ];
 // <li className="peer/home hover:border-l-2 px-2 py-2 hover:border-amber-600 hover:text-gray-300 hover:bg-sky-400/10">
 const Navlist = () => {
@@ -30,7 +32,7 @@ const Navlist = () => {
         return (
           <li
             key={item.name}
-            className={`"bg-gray-500/20  hover:bg-gray-300/20 rounded-lg font-semibold  ${
+            className={`"bg-gray-500/20 hover:bg-gray-300/20 rounded-lg font-semibold  ${
               navActiveLink(item.href)
                 ? "active:bg-gray-300/60 bg-gray-500/20 text-sky-300 transition-all ease-in-out duration-300 rounded-lg hover:bg-gray-100/40 hover:border-none font-semibold"
                 : ""
