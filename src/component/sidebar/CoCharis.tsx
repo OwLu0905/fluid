@@ -1,15 +1,18 @@
 import React from "react";
 
 const CoChair = {
-  name: "共同主辦",
+  // name: "共同主辦",
+  name: " ",
 };
 const field = [
   {
     field: "",
     list: [
       {
-        name: "周逸儒",
-        edu: "國立台灣大學應用力學所",
+        // name: "周逸儒",
+        // edu: "國立台灣大學應用力學所",
+        name: " ",
+        edu: " ",
       },
     ],
   },

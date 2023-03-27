@@ -32,7 +32,7 @@ const Navlist = () => {
         return (
           <li
             key={item.name}
-            className={`"bg-gray-500/20 hover:bg-gray-300/20 rounded-lg font-semibold  ${
+            className={`"bg-gray-500/20 hover:bg-gray-300/20 rounded-lg font-semibold sm:text-2xl ${
               navActiveLink(item.href)
                 ? "active:bg-gray-300/60 bg-gray-500/20 text-sky-300 transition-all ease-in-out duration-300 rounded-lg hover:bg-gray-100/40 hover:border-none font-semibold"
                 : ""
