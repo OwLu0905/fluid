@@ -22,37 +22,34 @@ const table = [
 const Agenda = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/100">
-
-      <h1 className="pb-4 text-xl sm:text-4xl">
-        議程
-      </h1>
+      <h1 className="pb-4 text-xl sm:text-4xl">議程</h1>
       <table className="border-collapse border border-slate-500">
         <thead>
           <tr>
-            <th className="w-2/12 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left text-cyan-300/100 sm:text-2xl">
+            <th className="w-2/12 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
               第一天
             </th>
-            <th className="w-4/12 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"></th>
-            <th className="w-2/12 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left text-cyan-300/100 sm:text-2xl">
+            <th className="w-4/12 border border-slate-300 p-4 text-left font-semibold"></th>
+            <th className="w-2/12 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
               第二天
             </th>
-            <th className="w-4/12 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"></th>
+            <th className="w-4/12 border border-slate-300 p-4 text-left font-semibold"></th>
           </tr>
         </thead>
         <tbody>
           {table.map((item) => {
             return (
               <tr key={item[0] + item[1]}>
-                <td className="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400 text-cyan-300/100 sm:text-2xl">
+                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
                   {item[0]}
                 </td>
-                <td className="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400 text-cyan-300/100 sm:text-2xl">
+                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
                   {item[1]}
                 </td>
-                <td className="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400 text-cyan-300/100 sm:text-2xl">
+                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
                   {item[2]}
                 </td>
-                <td className="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400 text-cyan-300/100 sm:text-2xl">
+                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
                   {item[3]}
                 </td>
               </tr>
