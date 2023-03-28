@@ -15,13 +15,14 @@ const AppLayout: React.ElementType = ({ children }: any) => {
       <div className="bg-black to-indigo-900/90 min-h-screen flex flex-col">
         <MobileNav />
         {/*<div className="p-2 md:p-6 lg:px-12 lg:py-10 mx-auto "> */}
-        <div className="relative w-full min-h-[10rem] sm:w-full sm:h-[14rem] md:w-full md:h-[20rem] lg:h-[22rem] xl:h-[570px] 2xl:h-[660px]  mb-6 md:mb-10">
+       {/*  <div className="relative w-full min-h-[10rem] sm:w-full sm:h-[14rem] md:w-full md:h-[20rem] lg:h-[22rem] xl:h-[570px] 2xl:h-[660px]  mb-6 md:mb-10"> */}
+        <div className="mb-6 md:mb-10">
           <Image
-            src="./banner/NCFD_600rs.jpeg"
-            // src="./banner/NCFD_v6.jpg"
-            // width={1920}
-            // height={570}
-            layout="fill"
+            // src="./banner/NCFD_600rs.jpeg"
+            src="./banner/NCFD_v6.jpg"
+            width={1920}
+            height={570}
+            // layout="fill"
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
             className="object-cover object-top"
