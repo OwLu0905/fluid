@@ -16,7 +16,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         {/*<div className="p-2 md:p-6 lg:px-12 lg:py-10 mx-auto "> */}
         <div className="mx-auto mb-8 md:mb-10">
           <Image
-            src="./banner/NCFD_v5.jpeg"
+            src="./banner/NCFD_v6.jpg"
             width={1920}
             height={570}
             alt="第28屆全國計算流體力學學術研討會"
