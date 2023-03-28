@@ -6,6 +6,7 @@ import Container from "../ui/Container";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 const AppLayout: React.ElementType = ({ children }: any) => {
+  // <div className="bg-no-repeat bg-[url('../assets/HotelView.jpg')]/80 bg-cover min-h-screen flex flex-col">
   return (
     <>
       {/* <div className="bg-gradient-to-r  from-indigo-900 via-slate-800 to-indigo-900 min-h-screen flex flex-col"> */}
@@ -14,17 +15,19 @@ const AppLayout: React.ElementType = ({ children }: any) => {
       <div className="bg-black to-indigo-900/90 min-h-screen flex flex-col">
         <MobileNav />
         {/*<div className="p-2 md:p-6 lg:px-12 lg:py-10 mx-auto "> */}
-        <div className="mx-auto mb-8 md:mb-10">
+        <div className="relative w-full min-h-[10rem] sm:w-full sm:h-[14rem] md:w-full md:h-[20rem] lg:h-[22rem] xl:h-[570px] 2xl:h-[660px]  mb-6 md:mb-10">
           <Image
-            src="./banner/NCFD_v6.jpg"
-            width={1920}
-            height={570}
+            src="./banner/NCFD_600rs.jpeg"
+            // src="./banner/NCFD_v6.jpg"
+            // width={1920}
+            // height={570}
+            layout="fill"
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
-            className="mx-auto object-cover object-top block w-full"
+            className="object-cover object-top"
           />
         </div>
-        <div className=" grow">
+        <div className=" grow ">
           <Container>
             {/* bg-gray-900/60 */}
             <div className="bg-gray-800/60 rounded-md p-6 shadow-2xl grid grid-cols-12 gap-x-2 md:gap-x-2 lg:gap-x-6 gap-y-6">

@@ -22,14 +22,14 @@ const HomePage = () => {
       <br></br>
       <h2 className="font-semibold text-base sm:text-2xl py-2">地點：</h2>
       <h3 className="font-semibold text-base sm:text-2xl py-2">北投亞太飯店</h3>
-      <div className="mx-10 mb-8 md:mb-10">
+      <div className="">
           <Image
             src="./banner/HotelView.jpg"
             width={1200}
             height={807}
             alt="北投亞太夜景"
             priority={true}
-            className="mx-auto object-cover object-top block w-full"
+            className="mx-auto object-scale-down  block w-full"
           />
         </div>
       <h2 className="font-semibold text-base sm:text-2xl py-2">主辦單位</h2>
