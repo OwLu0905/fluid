@@ -8,7 +8,7 @@ const table = [
     "9:30-10:20",
     "⼤會演講1(蕭述三講座教授)",
     "9:30-10:20",
-    "⼤會演講2 (Prof.KunihikoTaira,UCLA)",
+    "⼤會演講2 (Prof. KunihikoTaira,UCLA)",
   ],
   ["10:20-10:45", "茶點", "10:20-10:45", "茶點"],
   ["10:45-12:00", "迷你論壇1(中科院)", "10:45-12:00", "迷你論壇2 : 熱流應用"],
@@ -26,14 +26,14 @@ const Agenda = () => {
       <table className="border-collapse border border-slate-500">
         <thead>
           <tr>
-            <th className="w-2/12 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
+            <th className="w-3/20 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
               第一天
             </th>
-            <th className="w-4/12 border border-slate-300 p-4 text-left font-semibold"></th>
-            <th className="w-2/12 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
+            <th className="w-7/20 border border-slate-300 p-4 text-left font-semibold"></th>
+            <th className="w-3/20 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
               第二天
             </th>
-            <th className="w-4/12 border border-slate-300 p-4 text-left font-semibold"></th>
+            <th className="w-7/20 border border-slate-300 p-4 text-left font-semibold"></th>
           </tr>
         </thead>
         <tbody>

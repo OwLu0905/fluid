@@ -34,8 +34,8 @@ const HomePage = () => {
         </div>
       <h2 className="font-semibold text-base sm:text-2xl py-2">主辦單位</h2>
       <ul className="text-base sm:text-lg lg:text-xl space-y-2">
-        <li>(1) 中華民國航空太空學會</li>
-        <li>(2) 國立臺灣大學應用力學研究所</li>
+        <li> 中華民國航空太空學會</li>
+        <li> 國立臺灣大學應用力學研究所</li>
       </ul>
     </section>
   );
