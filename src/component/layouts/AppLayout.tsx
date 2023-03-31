@@ -19,7 +19,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         <div className="mb-6 md:mb-10">
           <Image
             // src="./banner/NCFD_600rs.jpeg"
-            src="./banner/NCFD_v6.jpg"
+            src="./banner/NCFD_v7.jpeg"
             width={1920}
             height={570}
             // layout="fill"
