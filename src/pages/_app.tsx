@@ -18,24 +18,13 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        {/*
         <title>
-          {Component.displayName
-            ? `第28屆全國計算流體力學學術研討會-${Component.displayName}`
-            : "第28屆全國計算流體力學學術研討會"}
+          {Component.displayName ? `${Component.displayName}` : "NCFD 2023"}
         </title>
-
-        // <title>NCFD 2023</title>
-        */}
-            <title>
-          {Component.displayName
-            ? `${Component.displayName}`
-            : "NCFD 2023"}
-            </title>
         <meta name="description" content="第28屆全國計算流體力學學術研討會" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="流體力學, 研討會, 28屆, 計算流體力學" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/banner/web_small_logo-min.jpg" />
       </Head>
       <Layout pageProps={pageProps}>
         <Component {...pageProps} />

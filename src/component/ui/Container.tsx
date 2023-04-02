@@ -6,7 +6,7 @@
 //
 const Container = ({ children }: any) => {
   return (
-    <div className="mx-auto max-w-[1920px] px-8 md:px-8 lg:px-16 2xl:px-16">
+    <div className="mx-auto max-w-[1920px] px-4 md:px-6 lg:px-10 2xl:px-12">
       {children}
     </div>
   );

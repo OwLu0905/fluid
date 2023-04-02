@@ -1,8 +1,9 @@
 import React from "react";
 
 import AppLayout from "@/component/layouts/AppLayout";
+import AgendaPage from "@/view/agenda";
 
-const table = [
+const table: [string,string,string,string][] = [
   ["9:20-9:30", "開幕", "", ""],
   [
     "9:30-10:20",
@@ -22,41 +23,7 @@ const table = [
 const Agenda = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/100">
-      <h1 className="pb-4 text-xl sm:text-4xl">議程</h1>
-      <table className="border-collapse border border-slate-500">
-        <thead>
-          <tr>
-            <th className="w-3/20 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
-              第一天
-            </th>
-            <th className="w-7/20 border border-slate-300 p-4 text-left font-semibold"></th>
-            <th className="w-3/20 border border-slate-300 p-4 text-left font-semibold text-cyan-300/100 sm:text-2xl">
-              第二天
-            </th>
-            <th className="w-7/20 border border-slate-300 p-4 text-left font-semibold"></th>
-          </tr>
-        </thead>
-        <tbody>
-          {table.map((item) => {
-            return (
-              <tr key={item[0] + item[1]}>
-                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
-                  {item[0]}
-                </td>
-                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
-                  {item[1]}
-                </td>
-                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
-                  {item[2]}
-                </td>
-                <td className="border border-slate-300 p-4 text-cyan-300/100 sm:text-2xl">
-                  {item[3]}
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <AgendaPage tableData={table} />
     </section>
   );
 };

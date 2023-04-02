@@ -27,19 +27,19 @@ const Navlist = () => {
     [pathname]
   );
   return (
-    <ul className="space-y-4 text-sm md:text-lg">
+    <ul className="space-y-4">
       {menuls.map((item) => {
         return (
           <li
             key={item.name}
-            className={`"bg-gray-500/20 hover:bg-gray-300/20 rounded-lg font-semibold sm:text-2xl ${
+            className={`rounded-lg font-semibold hover:bg-gray-300/20 sm:text-lg md:text-xl xl:text-2xl ${
               navActiveLink(item.href)
-                ? "active:bg-gray-300/60 bg-gray-500/20 text-sky-300 transition-all ease-in-out duration-300 rounded-lg hover:bg-gray-100/40 hover:border-none font-semibold"
+                ? "rounded-lg bg-gray-500/20 font-semibold text-sky-300 transition-all duration-300 ease-in-out hover:border-none hover:bg-gray-100/40 active:bg-gray-300/60"
                 : ""
             }`}
           >
             <Link
-              className={`px-4 py-2 block w-full  ${
+              className={`block w-full px-4 py-2  ${
                 navActiveLink(item.href) ? "px-8 py-2" : ""
               }`}
               href={item.href}

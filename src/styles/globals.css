@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 ::selection {
   color: white;
-  @apply bg-teal-400/80
+  @apply bg-teal-400/80;
 }
