@@ -14,7 +14,7 @@ const menuls = [
   { name: "海報論文競賽", href: "/poster" },
   { name: "委員會", href: "/committee" },
   { name: "聯絡資訊", href: "/contact" },
-  { name: "交通資訊", href: "/trafic" },
+  { name: "交通資訊", href: "/traffic" },
 ];
 // <li className="peer/home hover:border-l-2 px-2 py-2 hover:border-amber-600 hover:text-gray-300 hover:bg-sky-400/10">
 const Navlist = () => {

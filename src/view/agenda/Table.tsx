@@ -59,7 +59,7 @@ const agendaTable: AgendaTableType = {
       {
         time: "09:30-10:20",
         content: "⼤會演講2",
-        annotation: "Prof. KunihikoTaira,UCLA",
+        annotation: "Prof. KunihikoTaira, UCLA",
         type: 1,
       },
       { time: "10:20-10:45", content: "茶點", type: 0 },
@@ -113,7 +113,7 @@ const agendaPCTable: {
       {
         time: "09:30 - 10:20",
         content: "⼤會演講2",
-        annotation: "Prof. KunihikoTaira,UCLA",
+        annotation: "Prof. KunihikoTaira, UCLA",
         type: 1,
       },
     ],
@@ -206,7 +206,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                         key={item.time + item.content}
                         className="flex flex-row border-b-2 border-gray-600/30 bg-transparent last:border-none sm:flex-row"
                       >
-                        <time className="flex w-[5rem] flex-col whitespace-nowrap  bg-gray-800/60  py-1 text-center text-base text-gray-300/80  xs:w-[10rem] xs:flex-row xs:items-center xs:justify-center xs:text-lg ">
+                        <time className="flex w-[5rem] flex-col whitespace-nowrap  bg-gray-800/60  py-2 text-center text-base text-gray-300/80  xs:w-[10rem] xs:flex-row xs:items-center xs:justify-center xs:text-lg ">
                           <span className="">{item.time.split("-")[0]}</span>
                           <span className="text-sm xs:mx-2">-</span>
                           <span>{item.time.split("-")[1]}</span>
@@ -223,7 +223,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {item.content}
                           </p>
                           {item?.annotation && (
-                            <p className="py-1 text-center text-sm font-light text-yellow-600  xs:text-lg">
+                            <p className="py-1 text-center text-base font-light text-yellow-600  xs:text-lg">
                               {item?.annotation ?? ""}
                             </p>
                           )}
@@ -306,7 +306,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[1].content}
                           </h4>
                           {list[1]?.annotation && (
-                            <p className="my-1 font-light text-yellow-600">
+                            <p className="my-1 font-light  text-yellow-600">
                               {list[1]?.annotation ?? ""}
                             </p>
                           )}

@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
       <Title as="h2">重要日期</Title>
-      <ul className="space-y-4 text-lg md:text-lg lg:text-xl">
+      <ul className="space-y-4 text-lg md:text-lg lg:text-2xl">
         {essentialDate.map((item) => {
           return (
             <li key={`date-essential-${item.id}`}>
@@ -39,7 +39,7 @@ const HomePage = () => {
       </div>
       <br></br>
       <Title as="h2">主辦單位</Title>
-      <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
+      <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">
         <li> 中華民國航空太空學會</li>
         <li> 國立臺灣大學應用力學研究所</li>
       </ul>
