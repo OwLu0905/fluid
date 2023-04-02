@@ -7,9 +7,9 @@ type AgendaPageProps = {
 
 const tagStyle = {
   0: "",
-  1: "bg-green-300/60 text-green-600 shadow-md",
-  2: "bg-sky-300/60 text-sky-600  shadow-md",
-  3: "bg-indigo-300/60 text-violet-600 shadow-md",
+  1: "bg-emerald-300/80 text-emerald-800 shadow-md",
+  2: "bg-sky-300/80 text-sky-800  shadow-md",
+  3: "bg-violet-300/60 text-violet-800 shadow-md",
 };
 
 type AgendaTableListType = {
@@ -186,7 +186,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                     "w-full rounded-sm py-2.5 px-6 text-sm font-medium leading-5 ",
                     "",
                     selected
-                      ? "border-none bg-gradient-to-r from-cyan-600 to-blue-500 text-gray-100 shadow-md shadow-gray-600 outline-none  "
+                      ? "border-none bg-gradient-to-r from-cyan-600 to-blue-500 text-gray-100 outline-none  "
                       : " bg-gradient-to-r from-gray-300/80 to-slate-400 text-sky-900 ring-1 ring-blue-900/80"
                   )
                 }
@@ -204,14 +204,14 @@ const AgendaTable = (props: AgendaPageProps) => {
                     return (
                       <div
                         key={item.time + item.content}
-                        className="flex flex-row border-b-2 border-cyan-600/30 bg-gray-100 sm:flex-row"
+                        className="flex flex-row border-b-2 border-gray-600/30 bg-transparent last:border-none sm:flex-row"
                       >
-                        <time className="flex w-[5rem] flex-col whitespace-nowrap  bg-gray-300/60 py-1 text-center text-base text-gray-600 xs:w-[10rem] xs:flex-row xs:items-center xs:justify-center xs:text-lg ">
+                        <time className="flex w-[5rem] flex-col whitespace-nowrap  bg-gray-800/60  py-1 text-center text-base text-gray-300/80  xs:w-[10rem] xs:flex-row xs:items-center xs:justify-center xs:text-lg ">
                           <span className="">{item.time.split("-")[0]}</span>
                           <span className="text-sm xs:mx-2">-</span>
                           <span>{item.time.split("-")[1]}</span>
                         </time>
-                        <div className="my-0 flex grow flex-col items-center justify-center text-base text-gray-600 xs:my-2 sm:flex-row sm:text-xl">
+                        <div className="my-0 flex grow flex-col items-center justify-center text-base text-gray-300/80 xs:my-2 sm:flex-row sm:text-xl">
                           <p
                             className={classNames(
                               `mx-auto inline-block rounded-2xl px-4 py-1`,
@@ -223,7 +223,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {item.content}
                           </p>
                           {item?.annotation && (
-                            <p className="py-1 text-center text-sm font-light xs:text-lg">
+                            <p className="py-1 text-center text-sm font-light text-yellow-600  xs:text-lg">
                               {item?.annotation ?? ""}
                             </p>
                           )}
@@ -239,14 +239,14 @@ const AgendaTable = (props: AgendaPageProps) => {
       </div>
       <div className="hidden w-full sm:flex">
         <div className="w-full  xl:mx-10">
-          <div className="-mx-4 flex flex-col rounded-2xl border border-sky-800/20 bg-gray-100">
-            <div className="flex w-full flex-row">
+          <div className="-mx-4 flex flex-col border border-gray-600/20 bg-transparent">
+            <div className="flex w-full flex-row space-x-0">
               {agendaPCTable.name.map((name, index) => {
                 return (
                   <time
                     key={name}
-                    className={`w-1/2 border-b-2 border-slate-900/20 bg-gray-300/60 py-2 pl-4 text-start text-xl text-gray-600 lg:py-4 lg:pl-8  xl:text-2xl ${
-                      index === 0 ? " rounded-tl-2xl" : " rounded-tr-2xl"
+                    className={`w-1/2 border-b-2 border-none border-gray-900/20 bg-blue-900/60  py-2  pl-4 text-center text-xl text-white  lg:py-4 lg:pl-8  xl:text-2xl ${
+                      index === 0 ? " " : " "
                     }`}
                   >
                     {name}
@@ -254,7 +254,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                 );
               })}
             </div>
-            <div className="flex flex-col px-4 py-2 text-center text-base text-gray-600 ">
+            <div className="flex flex-col px-4 py-2 text-center text-base text-gray-300/80 ">
               {agendaPCTable.list.map(
                 (
                   list: Array<{
@@ -270,7 +270,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                   return (
                     <div
                       key={index}
-                      className="flex border-b-2 border-cyan-600/30 last:border-none"
+                      className="flex border-b-2 border-gray-600/30 last:border-none"
                     >
                       <div className="flex w-1/2 text-xl xl:text-2xl">
                         <p className="flex items-center">{list[0].time}</p>
@@ -286,7 +286,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[0].content}
                           </h4>
                           {list[0]?.annotation && (
-                            <p className="my-1 font-light">
+                            <p className="my-1 font-light text-yellow-600">
                               {list[0]?.annotation ?? ""}
                             </p>
                           )}
@@ -306,7 +306,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[1].content}
                           </h4>
                           {list[1]?.annotation && (
-                            <p className="my-1 font-light">
+                            <p className="my-1 font-light text-yellow-600">
                               {list[1]?.annotation ?? ""}
                             </p>
                           )}
