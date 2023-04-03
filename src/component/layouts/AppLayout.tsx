@@ -1,12 +1,9 @@
-import Head from "next/head";
 import Image from "next/legacy/image";
 import MobileNav from "../sidebar/MobileNav";
 import Navlist from "../sidebar/Navlist";
 import Container from "../ui/Container";
 import Footer from "./Footer";
-import Sidebar from "./Sidebar";
 const AppLayout: React.ElementType = ({ children }: any) => {
-  // <div className="bg-no-repeat bg-[url('../assets/HotelView.jpg')]/80 bg-cover min-h-screen flex flex-col">
   return (
     <>
       <div className="flex min-h-screen flex-col bg-black to-indigo-900/90">

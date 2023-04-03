@@ -25,7 +25,7 @@ const Contact = () => {
               className="flex items-center not-italic hover:text-gray-300/80 hover:underline hover:decoration-cyan-300 hover:underline-offset-2"
               href="tel:02-3366-5689"
             >
-              電話 : (02)3366-5068
+              電話 : 02-3366-5068
             </a>
           </li>
         </ul>
@@ -47,7 +47,7 @@ const Contact = () => {
               className="flex items-center not-italic hover:text-gray-300/80 hover:underline hover:decoration-cyan-300 hover:underline-offset-2"
               href="tel:02-3366-5689"
             >
-              電話 : (02)3366-5689
+              電話 : 02-3366-5689
             </a>
           </li>
         </ul>
