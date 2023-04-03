@@ -1,6 +1,7 @@
 import React from "react";
 
 import AppLayout from "@/component/layouts/AppLayout";
+import Title from "@/component/utils/Title";
 
 const table = [
   ["一般人士", "4000", "4500"],
@@ -11,13 +12,11 @@ const table = [
 const Register = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
-      {/* 
-<h3 className="font-semibold text-base sm:text-2xl py-2">主辦單位</h3>
-<ul className="text-base sm:text-lg lg:text-xl space-y-2">
-        <li>(1) 中華民國航空太空學會</li>
-        <li>(2) 國立臺灣大學應用力學研究所</li>
-      </ul> */}
-
+      <Title as="span">
+        <p className="text-gray-400 before:mr-2 before:content-['•']">
+          (內容未定案)
+        </p>
+      </Title>
       <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
         <li>
           <h2 className="py-2 text-base font-semibold sm:text-2xl">
