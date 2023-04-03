@@ -96,7 +96,7 @@ const TrafficPage = () => {
                 src="./banner/traffic2.png"
                 width={1100}
                 height={512}
-                alt="北投亞太飯店路線"
+                alt="第二十八屆計算流體力學晚宴地點：北投亞太飯店路線"
                 // priority={true}
                 className="mx-auto block w-full object-scale-down md:max-w-[50%]"
               />
@@ -137,7 +137,7 @@ const TrafficPage = () => {
                               src={i.image}
                               width={950}
                               height={700}
-                              alt="北投亞太飯店路線"
+                              alt="第二十八屆計算流體力學晚宴地點：北投亞太飯店接駁資訊"
                               // priority={true}
                               className="mx-auto block w-full object-scale-down"
                             />
@@ -148,7 +148,9 @@ const TrafficPage = () => {
                       {!!i.anno[0] &&
                         !i.image &&
                         i.anno.map((a) => (
-                          <p className="my-2 text-lg md:text-xl">{a}</p>
+                          <p key={a} className="my-2 text-lg md:text-xl">
+                            {a}
+                          </p>
                         ))}
                     </li>
                   );
