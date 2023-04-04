@@ -7,6 +7,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
   return (
     <>
       <div className="flex min-h-screen flex-col bg-black to-indigo-900/90">
+        {/* <div className="flex min-h-screen flex-col bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900"> */}
         <MobileNav />
         <div className="mx-auto mb-6 block md:mb-10 md:hidden">
           <Image

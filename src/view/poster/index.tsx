@@ -58,7 +58,7 @@ const PosterPage = () => {
                 <li
                   key={`date-essential-${item.id}`}
                   //   className="mx-1 my-2 border-l-2  border-amber-600 bg-blue-900/20 px-4 py-1 shadow-xl hover:cursor-pointer hover:bg-sky-300/60 hover:text-cyan-900/80 "
-                  className="mx-2 my-2 border-l-2 border-amber-600 bg-blue-900/20 px-4 py-2 shadow-xl hover:cursor-pointer hover:bg-gradient-to-r hover:from-blue-300/60 hover:to-gray-300/60 hover:text-amber-900 md:py-1 md:px-4 "
+                  className="mx-2 my-2 border-l-2 border-amber-600 bg-blue-900/20 px-4 py-2 shadow-xl md:py-1 md:px-4 hover:md:cursor-pointer hover:md:bg-gradient-to-r hover:md:from-blue-300/60 hover:md:to-gray-300/60 hover:md:text-amber-900 "
                 >
                   <div className="flex flex-wrap">
                     <span className="w-[1.5rem] md:w-[2.5rem]">
