@@ -22,7 +22,7 @@ const FeeTable = () => {
   const today = new Date().toISOString();
 
   return (
-    <div className="w-full lg:w-3/4">
+    <div className="w-full md:my-8 lg:w-3/4">
       {/* <div className="-mx-4 flex flex-col bg-transparent md:mx-2 xl:mx-4">
         <div className="flex w-full text-base xs:text-lg md:text-xl xl:text-2xl">
           <span className="relative mb-1 ">

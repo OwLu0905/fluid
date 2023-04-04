@@ -4,9 +4,6 @@ import React from "react";
 import FeeTable from "./FeeTable";
 
 const Fee = () => {
-  const today = new Date().toISOString();
-  const early = new Date("2023-06-03").toISOString();
-  const normal = new Date("2023-06-27").toISOString();
   return (
     <>
       <div className="mb-6">
@@ -18,7 +15,7 @@ const Fee = () => {
           <span className="text-lg sm:text-2xl lg:text-3xl">(劃撥報名)</span>
         </Title>
 
-        <ul className="mb-6 space-y-4 text-lg md:text-lg lg:text-2xl">
+        <ul className="mb-6 space-y-4 indent-4 text-lg md:text-lg lg:text-2xl">
           <li>
             <div className="flex flex-wrap">
               <p className="mr-2 font-normal">
