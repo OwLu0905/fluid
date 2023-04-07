@@ -62,7 +62,7 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            7. 海報投稿格式，請參照大會提供之模板，內容將參與海報競賽。
+            7. 海報投稿格式，請參照大會提供之模板，內容將參與海報競賽。特別一提，本次海報競賽將採用畫廊的方式進行，僅需題目、作者、機構、視覺化過後的研究結果、部分圖說。排版方式則自由發揮。
             <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
               按我下載.ppt模板
             </a>
