@@ -40,7 +40,7 @@ const Fee = () => {
           <li>
             <div className="flex flex-col flex-wrap space-y-2">
               <p className="mr-2 font-normal">
-                註一：註冊費用早鳥優惠截止日：6月26日。
+                註一：註冊費用早鳥優惠截止日：6月19日。
               </p>
               <p className="mr-2 font-normal">
                 註二：經繳費報名後恕不退費，收據於大會報到時領取。

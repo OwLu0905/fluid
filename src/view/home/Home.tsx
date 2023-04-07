@@ -43,6 +43,14 @@ const HomePage = () => {
         <li> 中華民國航空太空學會</li>
         <li> 國立臺灣大學應用力學研究所</li>
       </ul>
+      <br></br>
+      <Title as="h2">協辦單位</Title>
+      <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">
+        <li> 國科會工程司工程科技推廣中心</li>
+        <li> 國家高速網路與計算中心</li>
+        <li> 國家太空中心</li>
+        <li> 臺灣流體力學學會</li>
+      </ul>
     </section>
   );
 };

@@ -2,12 +2,12 @@ import React from "react";
 import Title from "@/component/utils/Title";
 const titleTable = [
   {
-    title: "6/26之前",
+    title: "6/19之前",
     anno: "(早鳥優惠)",
     date: new Date("2023-03-26").toISOString(),
   },
   {
-    title: "6/27之後",
+    title: "6/20之後",
     anno: "",
     date: new Date("2023-06-27").toISOString(),
   },
