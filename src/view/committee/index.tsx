@@ -37,7 +37,7 @@ const CommitteePage = () => {
           return (
             <li
               key={item.id}
-              className="mb-4 flex flex-col justify-center sm:mr-4 sm:flex-row sm:items-center"
+              className="mb-4 flex flex-col justify-center sm:mr-4 sm:w-[45%]"
             >
               <p className="text-lg font-bold text-gray-300/90 sm:mr-2 md:text-2xl">
                 {item.name}

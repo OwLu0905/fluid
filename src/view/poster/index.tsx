@@ -48,20 +48,20 @@ const PosterPage = () => {
       </Title>
       <div className="mb-6 ">
         <Title as="h2">論文徵求範圍</Title>
-        <div className="flex flex-col md:mx-4">
+        <div className="flex md:mx-4">
           {/* <div className="mb-6">
             <Example />
           </div> */}
-          <ul className="flex flex-wrap text-lg md:text-lg lg:text-2xl">
+          <ul className="flex flex-col text-lg sm:flex-row sm:flex-wrap md:text-lg lg:text-2xl">
             {PosterList.map((item) => {
               return (
                 <li
                   key={`date-essential-${item.id}`}
                   //   className="mx-1 my-2 border-l-2  border-amber-600 bg-blue-900/20 px-4 py-1 shadow-xl hover:cursor-pointer hover:bg-sky-300/60 hover:text-cyan-900/80 "
-                  className="mx-2 my-2 border-l-2 border-amber-600 bg-blue-900/20 px-4 py-2 shadow-xl md:py-1 md:px-4 hover:md:cursor-pointer hover:md:bg-gradient-to-r hover:md:from-blue-300/60 hover:md:to-gray-300/60 hover:md:text-amber-900 "
+                  className="mx-1 my-2 border-l-2 border-amber-600 bg-blue-900/20 px-2 py-2 shadow-xl sm:w-[45%] md:mx-2 md:px-3 hover:md:cursor-pointer hover:md:bg-gradient-to-r hover:md:from-blue-300/60 hover:md:to-gray-300/60 hover:md:text-amber-900 2xl:w-[30%] "
                 >
-                  <div className="flex flex-wrap">
-                    <span className="w-[1.5rem] md:w-[2.5rem]">
+                  <div className="flex w-full">
+                    <span className="w-[1.5rem] sm:w-[2.0rem]">
                       {item.id}.{" "}
                     </span>
                     <h4 className="mr-2">{item.name}</h4>
