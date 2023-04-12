@@ -66,7 +66,7 @@ const agendaTable: AgendaTableType = {
       {
         time: "10:45-12:00",
         content: "迷你論壇2",
-        annotation: "熱流應用",
+        annotation: "國家太空中心＆高速網路計算中心",
         type: 2,
       },
       { time: "12:00-13:00", content: "午餐", type: 0 },
@@ -131,7 +131,7 @@ const agendaPCTable: {
       {
         time: "10:45 - 12:00",
         content: "迷你論壇2",
-        annotation: "熱流應用",
+        annotation: "國家太空中心＆高速網路計算中心",
         type: 2,
       },
     ],
