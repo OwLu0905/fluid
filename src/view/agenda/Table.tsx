@@ -432,7 +432,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                           </h4>
 
                           {list[1]?.annotation && (
-                            <p className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
+                            <div className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
                               {/* {list[1]?.annotation ?? ""}{" "} */}
                               {list[1]?.annotation.includes("國家") ? (
                                 <div className="mx-auto flex flex-wrap items-center">
@@ -446,7 +446,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                               ) : (
                                 <> {list[1]?.annotation}</>
                               )}
-                            </p>
+                            </div>
                           )}
                         </div>
                       </div>
