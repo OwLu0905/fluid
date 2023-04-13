@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply font-sans;
+}
 ::selection {
   color: white;
   @apply bg-teal-400/80;

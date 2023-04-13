@@ -8,9 +8,9 @@ type AgendaPageProps = {
 
 const tagStyle = {
   0: "",
-  1: "bg-gradient-to-r  from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md",
-  2: "bg-gradient-to-r  from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md",
-  3: "bg-gradient-to-r  from-violet-300/80 to-purple-300/80 text-violet-800 shadow-md",
+  1: "bg-gradient-to-r  from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md shadow-green-300/60",
+  2: "bg-gradient-to-r  from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md shadow-sky-300/60",
+  3: "bg-gradient-to-r  from-purple-300/80 to-fuchsia-300/80 text-purple-800/80 shadow-md shadow-rose-300/60",
 };
 
 type AgendaTableListType = {
@@ -216,7 +216,7 @@ const agendaPCTableBefore: {
       {
         time: "10:45 - 12:00",
         content: "迷你論壇2",
-        annotation: "國家太空中心＆高速網路計算中心",
+        annotation: "國家太空中心 高速網路計算中心",
         type: 2,
       },
     ],
@@ -393,17 +393,25 @@ const AgendaTable = (props: AgendaPageProps) => {
                           </h4>
                           {list[0]?.annotation && (
                             <p className="my-1 mx-auto flex flex-wrap items-center text-center font-light  text-yellow-600">
-                              {list[0]?.annotation ? (
+                              {list[0]?.annotation && list[0]?.annotation ? (
                                 <>
                                   <span className="mr-1 inline-block grow text-center">
-                                    {list[0]?.annotation.split(" ")[0]}
+                                    {list[0]?.annotation.split("-")[0]}
                                   </span>
                                   <span className="inline-block grow text-center">
-                                    {list[0]?.annotation.split(" ")[1]}
+                                    {list[0]?.annotation.split("-")[1]}
                                   </span>
                                 </>
                               ) : (
-                                <></>
+                                <>
+                                  <span className="mr-1 inline-block grow text-center">
+                                    {list[0]?.annotation.split("&")[0]}
+                                  </span>
+                                  <br />
+                                  <span className="inline-block grow text-center">
+                                    {list[0]?.annotation.split("&")[1]}
+                                  </span>
+                                </>
                               )}
                             </p>
                           )}
@@ -422,9 +430,22 @@ const AgendaTable = (props: AgendaPageProps) => {
                           >
                             {list[1].content}
                           </h4>
+
                           {list[1]?.annotation && (
                             <p className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
-                              {list[1]?.annotation ?? ""}
+                              {/* {list[1]?.annotation ?? ""}{" "} */}
+                              {list[1]?.annotation.includes("國家") ? (
+                                <div className="mx-auto flex flex-wrap items-center">
+                                  <span className="mr-1 inline-block grow text-center">
+                                    {list[1]?.annotation.split(" ")[0]} &
+                                  </span>
+                                  <span className="inline-block grow text-center">
+                                    {list[1]?.annotation.split(" ")[1]}
+                                  </span>
+                                </div>
+                              ) : (
+                                <> {list[1]?.annotation}</>
+                              )}
                             </p>
                           )}
                         </div>

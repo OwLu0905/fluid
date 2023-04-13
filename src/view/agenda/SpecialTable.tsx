@@ -176,7 +176,7 @@ const SpecialAgendaTable = () => {
             </div>
 
             <div className="min-h-[7rem] py-4">
-              <p className="mx-3 mt-4 inline-block rounded-2xl  bg-gradient-to-tr from-purple-300/80 to-fuchsia-300/80 px-4 py-1 text-purple-800/80 shadow-md md:px-6 md:py-2">
+              <p className="mx-3 mt-4 inline-block grow rounded-2xl bg-gradient-to-tr from-purple-300/80 to-fuchsia-300/80 px-4 py-1 text-purple-800/80 shadow-md shadow-rose-300/60 md:px-6 md:py-2">
                 海報展⽰
               </p>
             </div>
@@ -188,9 +188,12 @@ const SpecialAgendaTable = () => {
               海報展示
             </p> */}
           </div>
-          <div className="my-4 flex min-h-[10rem] max-w-[6rem] shrink items-center rounded-md bg-gradient-to-b from-zinc-600/80 to-zinc-400/80 py-4 px-2 text-stone-300/80 sm:mx-4 sm:max-w-[4rem] sm:text-base md:max-w-[5rem] lg:max-w-[6rem] lg:text-xl xl:max-w-[8rem] 2xl:max-w-[12rem]">
+          <div className="md:text-md my-6 mx-2 flex max-w-[6rem] shrink items-center rounded-2xl bg-gradient-to-b from-stone-300/70 via-stone-300/80 to-zinc-300/60 px-2 py-1 text-sm text-stone-800/80 shadow-md shadow-zinc-500/60 sm:mx-4 sm:max-w-[6rem] sm:text-base md:max-w-[6rem] lg:max-w-[6rem] lg:text-lg xl:max-w-[8rem] xl:px-4 xl:text-2xl 2xl:max-w-[10rem]">
             流體力學學會會員大會暨年輕學者獎頒獎
           </div>
+          {/* <div className="my-4 flex min-h-[10rem] max-w-[6rem] shrink items-center rounded-md bg-gradient-to-b from-zinc-600/80 to-zinc-400/80 py-4 px-2 text-stone-300/80 sm:mx-4 sm:max-w-[4rem] sm:text-base md:max-w-[5rem] lg:max-w-[6rem] lg:text-xl xl:max-w-[8rem] 2xl:max-w-[12rem]">
+            流體力學學會會員大會暨年輕學者獎頒獎
+          </div> */}
         </div>
       </div>
       <div className="flex w-1/2">
@@ -210,7 +213,7 @@ const SpecialAgendaTable = () => {
             </div>
 
             <div className="flex min-h-[7rem] flex-col py-4">
-              <p className="mx-auto mt-4 inline-block rounded-2xl bg-gradient-to-r from-sky-300/80  to-cyan-300/80  px-4 py-1  text-sky-800 shadow-md md:px-6  md:py-2">
+              <p className="mx-auto mt-4 inline-block rounded-2xl bg-gradient-to-r from-sky-300/80  to-cyan-300/80  px-4 py-1  text-sky-800 shadow-md shadow-sky-300/60 md:px-6 md:py-2">
                 迷你論壇3
               </p>
               <p className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
