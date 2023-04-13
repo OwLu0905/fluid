@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import { Tab } from "@headlessui/react";
+import SpecialAgendaTable from "./SpecialTable";
 type AgendaPageProps = {
   tableData: [string, string, string, string][];
 };
 
 const tagStyle = {
   0: "",
-  1: "bg-emerald-300/80 text-emerald-800 shadow-md",
-  2: "bg-sky-300/80 text-sky-800  shadow-md",
-  3: "bg-violet-300/60 text-violet-800 shadow-md",
+  1: "bg-gradient-to-r  from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md",
+  2: "bg-gradient-to-r  from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md",
+  3: "bg-gradient-to-r  from-violet-300/80 to-purple-300/80 text-violet-800 shadow-md",
 };
 
 type AgendaTableListType = {
@@ -88,7 +89,7 @@ const agendaTable: AgendaTableType = {
   },
 };
 
-const agendaPCTable: {
+const agendaPCTableOri: {
   name: string[];
   list: Array<{
     time: string;
@@ -172,6 +173,110 @@ const agendaPCTable: {
   ],
 };
 
+const agendaPCTableBefore: {
+  name: string[];
+  list: Array<{
+    time: string;
+    content: string;
+    type: 0 | 1 | 2 | 3;
+    annotation?: string;
+  }>[];
+} = {
+  name: ["第一天", "第二天"],
+  list: [
+    [
+      { time: "09:20 - 09:30", content: "開幕", type: 0 },
+      { time: "09:20 - 09:30", content: "/", type: 0 },
+    ],
+    [
+      {
+        time: "09:30 - 10:20",
+        content: "⼤會演講1",
+        annotation: "蕭述三 講座教授",
+        type: 1,
+      },
+      {
+        time: "09:30 - 10:20",
+        content: "⼤會演講2",
+        annotation: "Prof. KunihikoTaira, UCLA",
+        type: 1,
+      },
+    ],
+    [
+      { time: "10:20 - 10:45", content: "茶點", type: 0 },
+      { time: "10:20 - 10:45", content: "茶點", type: 0 },
+    ],
+    [
+      {
+        time: "10:45 - 12:00",
+        content: "迷你論壇1",
+        annotation: "(中科院)",
+        type: 2,
+      },
+      {
+        time: "10:45 - 12:00",
+        content: "迷你論壇2",
+        annotation: "國家太空中心＆高速網路計算中心",
+        type: 2,
+      },
+    ],
+  ],
+};
+
+const agendaPCTableMid: {
+  name: string[];
+  list: Array<{
+    time: string;
+    content: string;
+    type: 0 | 1 | 2 | 3;
+    annotation?: string;
+  }>[];
+} = {
+  name: ["第一天", "第二天"],
+  list: [
+    [
+      {
+        time: "12:00 - 13:00",
+        content: "午餐",
+        annotation: "流體力學學會會員大會暨年輕學者獎頒獎",
+        type: 0,
+      },
+      { time: "12:00 - 13:00", content: "午餐", type: 0 },
+    ],
+  ],
+};
+
+const agendaPCTableAfter: {
+  name: string[];
+  list: Array<{
+    time: string;
+    content: string;
+    type: 0 | 1 | 2 | 3;
+    annotation?: string;
+  }>[];
+} = {
+  name: ["第一天", "第二天"],
+  list: [
+    [
+      { time: "14:30 - 15:00", content: "茶點", type: 0 },
+      { time: "14:15 - 14:45", content: "茶點", type: 0 },
+    ],
+    [
+      { time: "15:00 - 16:10", content: "⼯業論壇", type: 0 },
+      {
+        time: "14:45 - 16:00",
+        content: "迷你論壇4",
+        annotation: "紊流模擬",
+        type: 2,
+      },
+    ],
+    [
+      { time: "18:00 - 20:00", content: "晚宴", type: 0 },
+      { time: "16:00 - 17:00", content: "閉幕及頒獎", type: 0 },
+    ],
+  ],
+};
+
 const AgendaTable = (props: AgendaPageProps) => {
   return (
     <section>
@@ -223,7 +328,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {item.content}
                           </p>
                           {item?.annotation && (
-                            <p className="py-1 text-center text-base font-light text-yellow-600  xs:text-lg">
+                            <p className=" py-1 text-center text-base font-light text-yellow-600  xs:text-lg">
                               {item?.annotation ?? ""}
                             </p>
                           )}
@@ -241,7 +346,7 @@ const AgendaTable = (props: AgendaPageProps) => {
         <div className="w-full  xl:mx-10">
           <div className="-mx-4 flex flex-col border border-gray-600/20 bg-transparent">
             <div className="flex w-full flex-row space-x-0">
-              {agendaPCTable.name.map((name, index) => {
+              {agendaPCTableBefore.name.map((name, index) => {
                 return (
                   <time
                     key={name}
@@ -255,7 +360,7 @@ const AgendaTable = (props: AgendaPageProps) => {
               })}
             </div>
             <div className="flex flex-col px-4 py-2 text-center text-base text-gray-300/80 ">
-              {agendaPCTable.list.map(
+              {agendaPCTableBefore.list.map(
                 (
                   list: Array<{
                     time: string;
@@ -267,6 +372,83 @@ const AgendaTable = (props: AgendaPageProps) => {
                 ) => {
                   const type1 = list[0].type as 0 | 1 | 2 | 3;
                   const type2 = list[1].type as 0 | 1 | 2 | 3;
+
+                  return (
+                    <div
+                      key={index}
+                      className="flex border-b-2 border-gray-600/30 last:border-none"
+                    >
+                      <div className="flex w-1/2 text-xl xl:text-2xl">
+                        <p className="flex items-center">{list[0].time}</p>
+                        <div className="flex grow flex-col justify-center py-2">
+                          <h4
+                            className={classNames(
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              {
+                                [tagStyle[type1]]: true,
+                              }
+                            )}
+                          >
+                            {list[0].content}
+                          </h4>
+                          {list[0]?.annotation && (
+                            <p className="my-1 mx-auto flex flex-wrap items-center text-center font-light  text-yellow-600">
+                              {list[0]?.annotation ? (
+                                <>
+                                  <span className="mr-1 inline-block grow text-center">
+                                    {list[0]?.annotation.split(" ")[0]}
+                                  </span>
+                                  <span className="inline-block grow text-center">
+                                    {list[0]?.annotation.split(" ")[1]}
+                                  </span>
+                                </>
+                              ) : (
+                                <></>
+                              )}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                      <div className="flex w-1/2 text-xl xl:text-2xl">
+                        <p className="flex items-center">{list[1].time}</p>
+                        <div className="flex grow flex-col justify-center py-2">
+                          <h4
+                            className={classNames(
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              {
+                                [tagStyle[type2]]: true,
+                              }
+                            )}
+                          >
+                            {list[1].content}
+                          </h4>
+                          {list[1]?.annotation && (
+                            <p className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
+                              {list[1]?.annotation ?? ""}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+
+              <SpecialAgendaTable />
+
+              {agendaPCTableAfter.list.map(
+                (
+                  list: Array<{
+                    time: string;
+                    content: string;
+                    type: number;
+                    annotation?: string;
+                  }>,
+                  index: number
+                ) => {
+                  const type1 = list[0].type as 0 | 1 | 2 | 3;
+                  const type2 = list[1].type as 0 | 1 | 2 | 3;
+
                   return (
                     <div
                       key={index}
@@ -316,6 +498,140 @@ const AgendaTable = (props: AgendaPageProps) => {
                   );
                 }
               )}
+
+              {/* {agendaPCTableOri.list.map(
+                (
+                  list: Array<{
+                    time: string;
+                    content: string;
+                    type: number;
+                    annotation?: string;
+                  }>,
+                  index: number
+                ) => {
+                  const type1 = list[0].type as 0 | 1 | 2 | 3;
+                  const type2 = list[1].type as 0 | 1 | 2 | 3;
+
+                  if (
+                    list[0].content === "午餐" ||
+                    list[0].content === "海報展⽰"
+                  ) {
+                    return (
+                      <div
+                        key={index}
+                        className="flex border-b-2 border-gray-600/30 last:border-none"
+                      >
+                        <div className="flex w-1/2 flex-col text-xl xl:text-2xl">
+                          <div className="relative  px-4 ">
+                            <span className="relative flex h-3 w-3">
+                              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
+                              <span className="relative inline-flex h-3 w-3 rounded-full bg-teal-500"></span>
+                            </span>
+                            <p className="flex items-center rounded-md bg-gradient-to-r from-sky-400 to-violet-500 bg-clip-text text-base text-transparent md:text-xl">
+                              流體力學學會會員大會暨年輕學者獎頒獎
+                            </p>
+                          </div>
+
+                          <div className="flex text-xl xl:text-2xl">
+                            <p className="flex items-center">{list[0].time}</p>
+                            <div className="flex grow flex-col justify-center py-2">
+                              <h4
+                                className={classNames(
+                                  `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                                  {
+                                    [tagStyle[type1]]: true,
+                                  }
+                                )}
+                              >
+                                {list[0].content}
+                              </h4>
+                              {list[0]?.annotation && (
+                                <p className="my-1 font-light text-yellow-600">
+                                  {list[0]?.annotation ?? ""}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex w-1/2 flex-col text-xl xl:text-2xl">
+                          <div className="relative  px-4 ">
+                            <span className="relative flex h-3 w-3"></span>
+                            <p className="flex items-center rounded-md bg-gradient-to-r from-sky-400 to-violet-500 bg-clip-text  pt-4 text-base text-transparent md:text-xl"></p>
+                          </div>
+                          <div className="flex text-xl xl:text-2xl">
+                            <p className="flex items-center">{list[1].time}</p>
+                            <div className="flex grow flex-col justify-center py-2">
+                              <h4
+                                className={classNames(
+                                  `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                                  {
+                                    [tagStyle[type2]]: true,
+                                  }
+                                )}
+                              >
+                                {list[1].content}
+                              </h4>
+                              {list[1]?.annotation && (
+                                <p className="my-1 font-light  text-yellow-600">
+                                  {list[1]?.annotation ?? ""}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <div
+                      key={index}
+                      className="flex border-b-2 border-gray-600/30 last:border-none"
+                    >
+                      <div className="flex w-1/2 text-xl xl:text-2xl">
+                        <p className="flex items-center">{list[0].time}</p>
+                        <div className="flex grow flex-col justify-center py-2">
+                          <h4
+                            className={classNames(
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              {
+                                [tagStyle[type1]]: true,
+                              }
+                            )}
+                          >
+                            {list[0].content}
+                          </h4>
+                          {list[0]?.annotation && (
+                            <p className="my-1 font-light text-yellow-600">
+                              {list[0]?.annotation ?? ""}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                      <div className="flex w-1/2 text-xl xl:text-2xl">
+                        <p className="flex items-center">{list[1].time}</p>
+                        <div className="flex grow flex-col justify-center py-2">
+                          <h4
+                            className={classNames(
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              {
+                                [tagStyle[type2]]: true,
+                              }
+                            )}
+                          >
+                            {list[1].content}
+                          </h4>
+                          {list[1]?.annotation && (
+                            <p className="my-1 font-light  text-yellow-600">
+                              {list[1]?.annotation ?? ""}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              )} */}
             </div>
           </div>
         </div>
