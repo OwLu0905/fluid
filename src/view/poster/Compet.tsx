@@ -73,7 +73,14 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            8. 海報需自行印製，並提早帶至會場佈置。
+            8. 海報需自行印製，並提早帶至會場場佈。場佈時間為第一日上午前，撤場時間為第二日中午過後。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div className="flex flex-wrap">
+          <p className="mr-2 font-normal">
+            9. 海報參與者，需於海報展覽期間，於競賽海報前。若未出席，則視同放棄競賽。
           </p>
         </div>
       </li>
