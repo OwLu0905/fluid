@@ -67,7 +67,7 @@ const agendaTable: AgendaTableType = {
       {
         time: "10:45-12:00",
         content: "迷你論壇2",
-        annotation: "國家太空中心＆高速網路計算中心",
+        annotation: "國家太空中心 高速網路計算中心",
         type: 2,
       },
       { time: "12:00-13:00", content: "午餐", type: 0 },
@@ -276,7 +276,7 @@ const agendaPCTableAfter: {
     ],
   ],
 };
-
+// ＆
 const AgendaTable = (props: AgendaPageProps) => {
   return (
     <section>
@@ -306,6 +306,63 @@ const AgendaTable = (props: AgendaPageProps) => {
               {Object.values(agendaTable).map((posts, idx) => (
                 <Tab.Panel key={idx} className={"rounded-xl shadow-xl "}>
                   {posts.list.map((item) => {
+                    if (
+                      idx === 0 &&
+                      (item.content === "午餐" || item.content === "海報展⽰")
+                    ) {
+                      return (
+                        <div
+                          key={item.time + item.content}
+                          className="flex flex-row border-b-2 border-gray-600/30 bg-transparent last:border-none sm:flex-row"
+                        >
+                          <time className="flex w-[5rem] flex-col whitespace-nowrap  bg-gray-800/60  py-2 text-center text-base text-gray-300/80  xs:w-[10rem] xs:flex-row xs:items-center xs:justify-center xs:text-lg ">
+                            <span className="">{item.time.split("-")[0]}</span>
+                            <span className="text-sm xs:mx-2">-</span>
+                            <span>{item.time.split("-")[1]}</span>
+                          </time>
+                          <div className="my-4 flex grow flex-col items-center justify-center text-base text-gray-300/80 xs:my-2 sm:flex-row sm:text-xl">
+                            <div className="flex w-full flex-col items-center justify-center xs:flex-row ">
+                              <p
+                                className={classNames(
+                                  `mx-auto inline-block rounded-2xl px-4 py-1`,
+                                  {
+                                    [tagStyle[item.type] as string]: true,
+                                  }
+                                )}
+                              >
+                                {item.content}
+                              </p>
+                              {/* <div className="xs:me-auto mx-0 my-2 max-w-[10rem] shrink items-center whitespace-pre-line rounded-xl bg-gradient-to-r from-sky-500/90  to-violet-500/90 bg-clip-text px-8 py-2 text-base text-transparent xs:max-w-[10rem] xs:px-6"> */}
+                              {/* <div className="mt-4 border-t-2 border-dotted border-gray-400/80"> */}
+                              <div>
+                                <div className="mx-0 mt-2 flex shrink items-center justify-center rounded-xl px-2 pt-2 text-base font-semibold text-gray-300/80 xs:px-0">
+                                  流體力學學會會員大會
+                                </div>
+                                <div className="mx-0 mb-2 flex shrink items-center justify-center rounded-xl px-2 pb-2 text-base font-semibold text-gray-300/80 xs:px-0">
+                                  暨年輕學者獎頒獎
+                                </div>
+                              </div>
+                            </div>
+                            {item?.annotation && (
+                              <div className=" py-1 text-center text-base font-light text-purple-600 xs:text-lg">
+                                {item?.annotation.includes("國家") ? (
+                                  <div className="-mx-4 flex flex-col">
+                                    <div className="grow">
+                                      {item?.annotation.split(" ")[0]}＆
+                                    </div>
+                                    <div className="grow">
+                                      {item?.annotation.split(" ")[1]}
+                                    </div>
+                                  </div>
+                                ) : (
+                                  item?.annotation
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
                     return (
                       <div
                         key={item.time + item.content}
@@ -316,7 +373,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                           <span className="text-sm xs:mx-2">-</span>
                           <span>{item.time.split("-")[1]}</span>
                         </time>
-                        <div className="my-0 flex grow flex-col items-center justify-center text-base text-gray-300/80 xs:my-2 sm:flex-row sm:text-xl">
+                        <div className="my-4 flex grow flex-col items-center justify-center text-base text-gray-300/80 xs:my-2 sm:flex-row sm:text-xl">
                           <p
                             className={classNames(
                               `mx-auto inline-block rounded-2xl px-4 py-1`,
@@ -328,9 +385,21 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {item.content}
                           </p>
                           {item?.annotation && (
-                            <p className=" py-1 text-center text-base font-light text-yellow-600  xs:text-lg">
-                              {item?.annotation ?? ""}
-                            </p>
+                            <div className=" py-1 text-center text-base font-light text-yellow-600/80 xs:text-lg">
+                              {/* {item?.annotation ?? ""} */}
+                              {item?.annotation.includes("國家") ? (
+                                <div className="-mx-4 flex flex-col">
+                                  <div className="grow">
+                                    {item?.annotation.split(" ")[0]}＆
+                                  </div>
+                                  <div className="grow">
+                                    {item?.annotation.split(" ")[1]}
+                                  </div>
+                                </div>
+                              ) : (
+                                item?.annotation
+                              )}
+                            </div>
                           )}
                         </div>
                       </div>
@@ -383,7 +452,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                         <div className="flex grow flex-col justify-center py-2">
                           <h4
                             className={classNames(
-                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-3 md:py-2 lg:px-4 xl:px-6`,
                               {
                                 [tagStyle[type1]]: true,
                               }
@@ -392,7 +461,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[0].content}
                           </h4>
                           {list[0]?.annotation && (
-                            <p className="my-1 mx-auto flex flex-wrap items-center text-center font-light  text-yellow-600">
+                            <p className="my-1 mx-auto flex flex-wrap items-center text-center font-light  text-yellow-600/80">
                               {list[0]?.annotation && list[0]?.annotation ? (
                                 <>
                                   <span className="mr-1 inline-block grow text-center">
@@ -422,7 +491,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                         <div className="flex grow flex-col justify-center py-2">
                           <h4
                             className={classNames(
-                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-6 md:py-2 `,
+                              `mx-auto my-2 inline-block rounded-2xl px-4 py-1 md:px-3 md:py-2 lg:px-4 xl:px-6`,
                               {
                                 [tagStyle[type2]]: true,
                               }
@@ -432,7 +501,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                           </h4>
 
                           {list[1]?.annotation && (
-                            <div className="my-1 mx-auto flex items-center text-center font-light text-yellow-600 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
+                            <div className="my-1 mx-auto flex items-center text-center font-light text-yellow-600/80 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
                               {/* {list[1]?.annotation ?? ""}{" "} */}
                               {list[1]?.annotation.includes("國家") ? (
                                 <div className="mx-auto flex flex-wrap items-center">
@@ -489,7 +558,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[0].content}
                           </h4>
                           {list[0]?.annotation && (
-                            <p className="my-1 font-light text-yellow-600">
+                            <p className="my-1 font-light text-yellow-600/80">
                               {list[0]?.annotation ?? ""}
                             </p>
                           )}
@@ -509,7 +578,7 @@ const AgendaTable = (props: AgendaPageProps) => {
                             {list[1].content}
                           </h4>
                           {list[1]?.annotation && (
-                            <p className="my-1 font-light  text-yellow-600">
+                            <p className="my-1 font-light  text-yellow-600/80">
                               {list[1]?.annotation ?? ""}
                             </p>
                           )}
