@@ -12,6 +12,7 @@ const menuls = [
   { name: "論壇發表", href: "/presentation" },
   { name: "註冊與報名", href: "/register" },
   { name: "海報論文競賽", href: "/poster" },
+  { name: "流體力學之美展覽", href: "/exhibition" },
   { name: "委員會", href: "/committee" },
   { name: "聯絡資訊", href: "/contact" },
   { name: "交通資訊", href: "/traffic" },
