@@ -66,12 +66,12 @@ const MobileNav = () => {
             NCFD
           </h1>
           {toggleNav && (
-            <div
+            <aside
               className="absolute right-0 top-11 w-full bg-gradient-to-r from-cyan-900 to-indigo-900/95 px-6  py-4 opacity-100"
               onClick={toggleMenuHandler}
             >
               <Navlist />
-            </div>
+            </aside>
           )}
         </div>
       )}

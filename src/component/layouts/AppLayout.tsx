@@ -33,9 +33,9 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           <Container>
             <div className="grid grid-cols-12 gap-x-2 gap-y-6 rounded-md bg-gray-800/60 px-6 py-6 shadow-2xl md:gap-x-2 md:py-10 lg:gap-x-2">
               <div className="order-2 col-span-12  lg:col-span-3 ">
-                <div className="mx-2 hidden rounded-lg px-2 py-2 text-sky-600 shadow-xl md:px-0 md:py-6 lg:order-1 lg:block lg:px-2">
+                <aside className="mx-2 hidden rounded-lg px-2 py-2 text-sky-600 shadow-xl md:px-0 md:py-6 lg:order-1 lg:block lg:px-2">
                   <Navlist />
-                </div>
+                </aside>
                 {/* <Sidebar /> */}
               </div>
               <div className="order-1 col-span-12 lg:order-2  lg:col-span-9">

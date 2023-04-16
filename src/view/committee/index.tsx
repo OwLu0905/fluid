@@ -40,7 +40,13 @@ const commitData: { id: number; name: string; organize: string }[] = [
 const CommitteePage = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
-      <Title as="h2">籌備委員會(按姓氏筆劃排列)</Title>
+      <Title as="h2">
+        籌備委員會
+        <span className="block text-lg sm:text-xl md:inline-block lg:text-2xl">
+          (按姓氏筆劃排列)
+        </span>
+      </Title>
+
       <ul className="flex flex-col sm:flex-row sm:flex-wrap ">
         {commitData.map((item) => {
           return (
