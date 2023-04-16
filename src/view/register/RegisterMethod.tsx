@@ -1,4 +1,6 @@
+import LinkIcon from "@/component/icon/Link";
 import Title from "@/component/utils/Title";
+import Link from "next/link";
 import React from "react";
 
 const RegisterMethod = () => {
@@ -18,7 +20,31 @@ const RegisterMethod = () => {
         <li className="font-normal">
           線上報名表，表單連結如下：
           <ol className="mt-2 space-y-1 md:space-y-2">
-            <li>（1）報名表單，請按此報名（6/19前）、請按此報名（6/20後）。</li>
+            <li className="flex">
+              （1）報名表單，
+              <Link
+                rel="canonical"
+                title="請按此報名（6/19前）"
+                href="https://forms.gle/ZFfPbqzLZ7CR2hGo7"
+                target="_blank"
+                className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+              >
+                <LinkIcon className="h-4 w-4" />
+                請按此報名（6/19前）
+              </Link>{" "}
+              、{" "}
+              <Link
+                rel="canonical"
+                title="請按此報名（6/20後）"
+                href="https://forms.gle/xD3wototvBJfahAS9"
+                target="_blank"
+                className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+              >
+                <LinkIcon className="h-4 w-4" />
+                請按此報名（6/20後）
+              </Link>
+              。
+            </li>
             <li>
               （2）若您的身份為隨行眷屬，註冊費用，將與會議參與人員合併填寫一份。只要確保最後上傳的劃撥收據金額總數正確即可。
             </li>
