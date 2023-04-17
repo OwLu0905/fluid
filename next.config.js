@@ -10,3 +10,15 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+// module.exports = {
+//   reactStrictMode: false,
+//   async rewrites() {
+//     return [
+//       {
+//         source: `/${encodeURIComponent("議程")}`,
+//         destination: "/agenda",
+//       },
+//     ];
+//   },
+// };

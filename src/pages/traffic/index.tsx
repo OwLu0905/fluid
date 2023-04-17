@@ -1,12 +1,19 @@
 import AppLayout from "@/component/layouts/AppLayout";
-import Title from "@/component/utils/Title";
+import NextSEO from "@/component/layouts/NextSEO";
 import TrafficPage from "@/view/traffic";
-import CustomMap from "@/view/traffic/CustomMap";
-import SimpleMap from "@/view/traffic/SimpleMap";
+
 import React from "react";
 
 const Traffic = () => {
-  return <TrafficPage />;
+  return (
+    <>
+      <NextSEO
+        title="交通資訊"
+        description="第28屆全國計算流體力學學術研討會註冊與報名"
+      />
+      <TrafficPage />
+    </>
+  );
 };
 
 Traffic.Layout = AppLayout;
