@@ -25,7 +25,7 @@ const CustomMap = () => {
 
   const containerStyle = {
     width: "100%",
-    height: "600px",
+    height: "20rem",
   };
 
   const center = {
@@ -49,7 +49,7 @@ const CustomMap = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <LoadScript
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_P as string}
       >
