@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <NextSEO
         title="聯絡資訊"
-        description="第28屆全國計算流體力學學術研討會聯絡資訊"
+        description="第28屆全國計算流體力學學術研討會聯絡資訊，研討會主要聯絡人：周逸儒(Yi-Ju Chou) 教授，國立臺灣大學應用力學研究所，電話：02-33665068，應用力學館410室。"
       />
 
       <section className="mx-auto block w-full text-gray-300/80">
