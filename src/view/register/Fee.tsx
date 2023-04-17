@@ -25,15 +25,15 @@ const Fee = () => {
           </li>
           <li>
             <div className="flex flex-wrap">
-              <p className="mr-2 font-normal">劃撥帳號 : xxxxxxxx</p>
-              <p className="mr-2 font-normal">戶名 : xxxxxxxxxx</p>
+              <p className="mr-2 font-normal">劃撥帳號 : 19826163</p>
+              <p className="mr-2 font-normal">戶名 : 中華民國航空太空學會</p>
             </div>
           </li>
 
           <li>
             <div className="flex flex-wrap">
               <p className="mr-2 font-normal">
-                請於通訊欄註明：2023NCFD報名費、姓名、論文編號、收據抬頭(視需要)。
+                請於通訊欄註明：2023NCFD報名費、姓名、收據抬頭(視需要)。
               </p>
             </div>
           </li>

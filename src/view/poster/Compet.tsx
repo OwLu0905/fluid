@@ -51,7 +51,7 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            6. 論文全文投稿格式，以八頁內為限，內容將參與論文競賽。
+            6. 論文全文投稿格式，以十頁內為限，內容將參與論文競賽。
             <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
               按我下載範例檔案
             </a>
@@ -73,7 +73,7 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            8. 海報需自行印製，並提早帶至會場場佈。場佈時間為第一日上午前，撤場時間為第二日中午過後。
+            8. 海報需自行印製，並提早帶至會場場佈。場佈時間為第一日中午前，撤場時間為第二日中午過後。
           </p>
         </div>
       </li>

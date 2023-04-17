@@ -14,9 +14,9 @@ const Register = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
       <Title as="span">
-        <p className="text-gray-400 before:mr-2 before:content-['•']">
+        {/* <p className="text-gray-400 before:mr-2 before:content-['•']">
           (內容未定案)
-        </p>
+        </p> */}
       </Title>
       <RegisterPage />
     </section>
