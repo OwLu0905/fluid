@@ -20,7 +20,7 @@ const RegisterMethod = () => {
         <li className="font-normal">
           線上報名表，表單連結如下：
           <ol className="mt-2 space-y-1 md:space-y-2">
-            <li className="flex">
+            <li className="flex flex-wrap">
               （1）報名表單，
               <Link
                 rel="canonical"
@@ -31,8 +31,8 @@ const RegisterMethod = () => {
               >
                 <LinkIcon className="h-4 w-4" />
                 請按此報名（6/19前）
-              </Link>{" "}
-              、{" "}
+              </Link>
+              、
               <Link
                 rel="canonical"
                 title="請按此報名（6/20後）"

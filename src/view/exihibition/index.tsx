@@ -1,4 +1,6 @@
+import LinkIcon from "@/component/icon/Link";
 import Title from "@/component/utils/Title";
+import Link from "next/link";
 import React from "react";
 
 const ExhibitionPage = () => {
@@ -42,11 +44,18 @@ const ExhibitionPage = () => {
       <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h2">投稿流程：</Title>
         <ol className="mb-6 list-inside list-decimal space-y-4 text-lg md:indent-2 md:text-lg lg:text-2xl">
-          <li className="font-normal">
+          <li className="flex flex-wrap font-normal">
             請於8月7日前，由Google表單提交展覽海報檔案，方便大會歸檔所用。
-            <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
+            <Link
+              rel="canonical"
+              title="流體力學之美提交海報"
+              href="https://forms.gle/F2Rw5ic4PCpA5QVx8"
+              target="_blank"
+              className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+            >
+              <LinkIcon className="h-4 w-4" />
               請按我提交海報
-            </a>
+            </Link>
           </li>
         </ol>
       </div>
