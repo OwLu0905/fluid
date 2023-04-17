@@ -25,7 +25,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
         <meta name="description" content="第28屆全國計算流體力學學術研討會" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="流體力學, 研討會, 28屆, 計算流體力學" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" sizes="144x144" href="/favicon.ico" />
       </Head>
       <DefaultSEO />
       <Layout pageProps={pageProps}>

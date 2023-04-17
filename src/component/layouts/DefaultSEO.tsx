@@ -13,10 +13,12 @@ const DefaultSEO = () => {
           {
             rel: "icon",
             href: "/favicon.ico",
+            sizes: "144x144",
           },
           {
             rel: "apple-touch-icon",
             href: "/favicon.ico",
+            sizes: "144x144",
           },
         ]}
         openGraph={{
