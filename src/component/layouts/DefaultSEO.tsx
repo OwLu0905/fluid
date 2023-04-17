@@ -12,12 +12,11 @@ const DefaultSEO = () => {
         additionalLinkTags={[
           {
             rel: "icon",
-            href: "favicon.jpg",
+            href: "/favicon.ico",
           },
           {
             rel: "apple-touch-icon",
-            href: "favicon.jpg",
-            sizes: "76x76",
+            href: "/favicon.ico",
           },
         ]}
         openGraph={{
