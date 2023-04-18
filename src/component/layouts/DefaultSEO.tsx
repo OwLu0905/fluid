@@ -12,12 +12,12 @@ const DefaultSEO = () => {
         additionalLinkTags={[
           {
             rel: "icon",
-            href: "https://ncfd2023.tw/favicon.ico",
+            href: "/favicon.ico",
             sizes: "144x144",
           },
           {
             rel: "apple-touch-icon",
-            href: "https://ncfd2023.tw/favicon.ico",
+            href: "/favicon.ico",
             sizes: "144x144",
           },
         ]}

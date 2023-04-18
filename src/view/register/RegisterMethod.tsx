@@ -12,7 +12,8 @@ const RegisterMethod = () => {
       >
         報名方式
       </Title>
-      <ol className="mb-6 list-inside list-decimal space-y-4 text-lg md:indent-2 md:text-lg lg:text-2xl">
+
+      <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl lg:mb-8 xl:mb-10 xl:text-2xl">
         <li className="font-normal">
           本研討採用google表單來提交線上報名表。（表單需上傳郵政劃撥的收據電子檔，麻煩匯款完成後再掃瞄或拍照檔案上傳，上傳檔案有檔案大小的限制，請注意檔案大小。）
         </li>

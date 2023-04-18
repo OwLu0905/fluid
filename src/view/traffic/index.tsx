@@ -24,7 +24,13 @@ const trafficWay = [
     lists: [
       {
         main: "航空：桃園中正機場，到站須轉搭其他大眾運輸",
-        anno: ["（建議搭乘：計程車，費用約 1,200 元 / 單程）"],
+        anno: [
+          `（建議搭乘：計程車，費用約 ${new Intl.NumberFormat("zh-TW", {
+            style: "currency",
+            currency: "TWD",
+            maximumFractionDigits: 0,
+          }).format(1200)} 元 / 單程）`,
+        ],
         image: undefined,
       },
       {
@@ -35,11 +41,11 @@ const trafficWay = [
         image: undefined,
       },
       {
-        main: "捷運：搭乘捷運至北投站或新北投站下車，轉搭小 25 公車或 230 大公車，至幽雅路35號下車。",
+        main: "捷運：捷搭乘捷運至北投站或新北投站下車，轉搭小 25 公車或 230 大公車，至幽雅路35號下車。",
         anno: [
           "（搭乘捷運至北投站或新北投站下車，轉搭亞太接駁車；每日06:20~22:30提供飯店至北投捷運站免費接駁服務)",
-          "★ 北投捷運站候車處:捷運站1號出口右側廣場前方接駁車站牌。",
-          "★ 新北投捷運站候車處:捷運站出口左後方20公尺接駁車站牌。",
+          "★ 北投捷運站候車處：運站1號出口右側廣場前方接駁車站牌。",
+          "★ 新北投捷運站候車處：捷運站出口左後方20公尺接駁車站牌。",
           "★ 新北投捷運站步行至北投亞太飯店，約20-30分鐘，路程經數段上坡。",
         ],
         image: undefined,
@@ -57,16 +63,16 @@ const TrafficPage = () => {
     <section className="mx-auto block w-full text-gray-300/80">
       {/* <SimpleMap /> */}
 
-      <div className="mb-4 flex flex-col lg:mb-6 xl:mb-8">
+      <div className="mb-6 flex flex-col lg:mb-8 xl:mb-10">
         <div>
           <Title as="h3">會議地點</Title>
-          <p className="text-lg md:text-lg lg:text-2xl">
+          <p className="text-base sm:text-lg md:text-xl xl:text-2xl">
             北投亞太飯店，亞太一廳，5樓。
           </p>
           <br />
         </div>
         <div className="flex flex-col items-start md:flex-row">
-          <ul className="space-y-2 text-lg md:text-lg lg:text-xl">
+          <ul className="space-y-2 text-base sm:text-lg md:text-xl xl:text-2xl">
             <li>北投亞太飯店</li>
             <li>地址：台北市北投區幽雅路31號 </li>
             <li>
@@ -106,25 +112,22 @@ const TrafficPage = () => {
           </div>
         </div>
       </div>
-      <div className="mb-4 lg:mb-6 xl:mb-8">
+      <div className="mb-6 lg:mb-8 xl:mb-10">
         <CustomMap />
       </div>
-      <div>
+      <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h3">交通資訊</Title>
         {trafficWay.map((item) => {
           return (
             <div key={item.name} className="mx-0 mb-4 lg:mb-6 xl:mb-8">
-              <p className="mb-4 text-lg font-bold text-blue-400  md:text-xl lg:mb-6 lg:text-2xl">
+              <p className="mb-4 text-lg font-bold text-blue-400  md:text-xl lg:mb-6 lg:text-2xl ">
                 {item.name}
               </p>
-              <ul className="lg:space-y-r2 flex flex-col space-y-2 md:space-y-4">
+              <ul className="lg:space-y-r2 flex flex-col space-y-2 text-base sm:text-lg md:space-y-4 md:text-xl xl:text-2xl">
                 {item.lists.map((i) => {
                   return (
-                    <li
-                      key={i.main}
-                      className="mb-2 text-lg md:text-xl lg:text-2xl"
-                    >
-                      <p className="my-1 border-l border-l-[#ffd000] bg-blue-900/20 py-4 pl-4 md:border-l-2">
+                    <li key={i.main} className="mb-2">
+                      <p className="my-1 mb-4 border-l border-l-[#ffd000] bg-blue-900/20 py-4 pl-4 md:border-l-2">
                         {i.main}
                       </p>
                       {i.image && (
@@ -149,7 +152,10 @@ const TrafficPage = () => {
                       {!!i.anno[0] &&
                         !i.image &&
                         i.anno.map((a) => (
-                          <p key={a} className="my-2 text-lg md:text-xl">
+                          <p
+                            key={a}
+                            className="mb-4 text-base sm:text-lg md:text-xl xl:text-2xl"
+                          >
                             {a}
                           </p>
                         ))}

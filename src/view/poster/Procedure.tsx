@@ -4,7 +4,7 @@ import React from "react";
 
 const Procedure = () => {
   return (
-    <ul className="space-y-4 text-lg md:text-lg lg:text-2xl">
+    <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
       <li>
         <div className="flex flex-wrap font-normal">
           <p>

@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "@/component/utils/Title";
+
 const titleTable = [
   {
     title: "6/19之前",
@@ -12,15 +12,13 @@ const titleTable = [
     date: new Date("2023-06-27").toISOString(),
   },
 ];
-const feeTable = [
-  ["一般人士", "5000", "5500"],
-  ["學生身分", "2500", "3000"],
-  ["隨行眷屬", "1200", "1200"],
+const feeTable: [string, number, number][] = [
+  ["一般人士", 5000, 5500],
+  ["學生身分", 2500, 3000],
+  ["隨行眷屬", 1200, 1200],
 ];
 
 const FeeTable = () => {
-  const today = new Date().toISOString();
-
   return (
     <div className="w-full md:my-8 lg:w-3/4">
       {/* <div className="-mx-4 flex flex-col bg-transparent md:mx-2 xl:mx-4">
@@ -74,13 +72,26 @@ const FeeTable = () => {
                 <div
                   className={`my-2 flex w-1/3 flex-col items-center justify-center rounded-2xl px-1 py-1 md:my-4 md:w-2/5 lg:my-6 `}
                 >
-                  <p> {name[1]}</p>
+                  <p>
+                    {new Intl.NumberFormat("zh-TW", {
+                      style: "currency",
+                      currency: "TWD",
+                      maximumFractionDigits: 0,
+                    }).format(name[1])}
+                  </p>
                 </div>
 
                 <div
                   className={`my-2 flex w-1/3 flex-col items-center justify-center rounded-2xl px-1 py-1 md:my-4 md:w-2/5 lg:my-6 `}
                 >
-                  <p> {name[2]}</p>
+                  <p>
+                    {" "}
+                    {new Intl.NumberFormat("zh-TW", {
+                      style: "currency",
+                      currency: "TWD",
+                      maximumFractionDigits: 0,
+                    }).format(name[2])}
+                  </p>
                 </div>
               </div>
             </div>

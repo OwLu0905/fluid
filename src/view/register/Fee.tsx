@@ -6,7 +6,7 @@ import FeeTable from "./FeeTable";
 const Fee = () => {
   return (
     <>
-      <div className="mb-6">
+      <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title
           as="h3"
           className="flex items-center before:mr-2 before:content-['•']"
@@ -15,7 +15,7 @@ const Fee = () => {
           <span className="text-lg sm:text-2xl lg:text-3xl">(劃撥報名)</span>
         </Title>
 
-        <ul className="mb-6 space-y-4 indent-4 text-lg md:text-lg lg:text-2xl">
+        <ul className="mb-6 space-y-4 indent-4 text-base sm:text-lg md:text-xl lg:mb-8 xl:mb-10 xl:text-2xl">
           <li>
             <div className="flex flex-wrap">
               <p className="mr-2 font-normal">
@@ -49,7 +49,7 @@ const Fee = () => {
           </li>
         </ul>
       </div>
-      <div className="mb-6 flex w-full justify-center">
+      <div className="mb-6 flex w-full justify-center lg:mb-8 xl:mb-10">
         <FeeTable />
       </div>
     </>

@@ -18,6 +18,7 @@ const Title = (props: TitleTypeProps) => {
 
   const classNames = className || "";
   // return <Component className={titleClassName}>{children}</Component>;
+  // `inline-block bg-gradient-to-r from-cyan-300/60 via-cyan-300/80 to-sky-300/80 bg-clip-text pb-2 text-2xl font-semibold text-transparent sm:pb-4 sm:text-3xl lg:pb-6 lg:text-4xl`,
   return (
     <Component
       className={cn(
