@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="mt-4 bg-slate-900 py-4 text-gray-100/60">
       <Container>
-        <div className="flex flex-col space-y-2 px-6 py-4 text-base sm:flex-row sm:space-y-0 sm:text-lg  md:text-xl lg:px-8 xl:text-2xl 2xl:px-12">
+        {/* <div className="flex flex-col space-y-2 px-6 py-4 text-base sm:flex-row sm:space-y-0 sm:text-lg  md:text-xl lg:px-8 xl:text-2xl 2xl:px-12"> */}
+        <div className="flex flex-col space-y-2 px-6 py-4 text-[12px] sm:flex-row sm:space-y-0 sm:text-base lg:px-8 2xl:px-12 ">
           <div className="mt-0 flex flex-col space-y-1 sm:mr-4 md:mr-8 lg:mr-12">
             {/* <h3 className="mb-2 pb-1 text-cyan-600 border-cyan-100/30 border-b-2 pl-2 text-xl"> */}
             <h3 className="mb-1 py-1 text-lg font-semibold text-cyan-600 sm:text-2xl">
