@@ -6,6 +6,7 @@ const essentialDate: DateListType[] = [
   { id: 0, title: "早鳥優惠報名截止日", time: "2023年6月19日（星期一）" },
   { id: 1, title: "論文投稿截止日", time: "2023年6月19日（星期一）" },
   { id: 2, title: "論文審查通知日", time: "2023年7月17日（星期一）" },
+  { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
 ];
 
 const HomePage = () => {

@@ -27,14 +27,21 @@ const Procedure = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            2. 大會將於7月17日，寄送審查通知至您登記的信箱。
+            2. 大會於收件截止後五個工作天內，會寄送論文編號至您所登記的信箱。
           </p>
         </div>
       </li>
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            3. 請於8月7日前，由Google表單提交海報檔案，方便大會歸檔所用。{" "}
+            3. 大會將於7月17日，寄送審查通知至您登記的信箱。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div className="flex flex-wrap">
+          <p className="mr-2 font-normal">
+            4. 請於8月7日前，由Google表單提交海報檔案，方便大會歸檔所用。{" "}
           </p>
           <Link
             rel="canonical"

@@ -53,7 +53,11 @@ const Compet = () => {
           <p className="mr-2 font-normal">
             6. 論文全文投稿格式，以十頁內為限，內容將參與論文競賽。
             <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
-              按我下載範例檔案
+              按我下載範例檔案（中文）
+            </a>
+            、
+            <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
+              按我下載範例檔案（英文）
             </a>
             。
           </p>
@@ -62,11 +66,10 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            7. 海報投稿格式，請參照大會提供之模板，內容將參與海報競賽。
-            <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
+            7. 海報競賽投稿格式僅需在右上方註明清楚海報編號即可，其餘皆<span className="text-red-500" >無限制</span>，內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小 90cm X 150 cm，一個展版將規劃放置一幅海報，尺寸最大為A0。）
+            {/* <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
               按我下載.ppt模板
-            </a>
-            。
+            </a> */}
           </p>
         </div>
       </li>
