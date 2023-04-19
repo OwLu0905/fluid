@@ -6,12 +6,38 @@ import Footer from "./Footer";
 const AppLayout: React.ElementType = ({ children }: any) => {
   return (
     <>
-      <div className="flex min-h-screen flex-col bg-black to-indigo-900/90">
+      <div className="bg flex min-h-screen flex-col bg-black to-indigo-900/90">
         {/* <div className="flex min-h-screen flex-col bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900"> */}
         <MobileNav />
+        {/* <div className="mx-auto mb-0 flex flex-col items-center justify-center bg-white font-mono md:hidden ">
+          <div className="z-[2] -mb-8 mt-2">
+            <div className="flex items-center justify-between">
+              <h3 className="text-[2.5rem] font-black text-sky-500">NCFD</h3>
+              <time className="font-extrabold text-gray-400">
+                <p>8月17-18, 2023,</p>
+                <p>臺北, 北投</p>
+              </time>
+            </div>
+            <h4 className="text-[1rem] font-medium text-sky-600">
+              第28屆全國計算流體力學學術研討會暨
+            </h4>
+            <h4 className="text-[1rem] font-medium text-sky-600">
+              第2屆臺灣流體力學學會年會
+            </h4>
+          </div>
+          <Image
+            src="./banner/test2.png"
+            width={1900}
+            height={800}
+            alt="第28屆全國計算流體力學學術研討會"
+            priority={true}
+            className="mx-auto block object-cover object-bottom"
+          />
+        </div> */}
+
         <div className="mx-auto mb-6 block md:mb-10 md:hidden">
           <Image
-            src="./banner/web_mobile_v1-min.jpg"
+            src="./banner/web_mobile_v2.jpg"
             width={1900}
             height={600}
             alt="第28屆全國計算流體力學學術研討會"
@@ -21,7 +47,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         </div>
         <div className="mx-auto mb-6 hidden md:mb-10 md:block">
           <Image
-            src="./banner/NCFD_v7-min.jpeg"
+            src="./banner/NCFD_web_whitetop_v8.jpg"
             width={1920}
             height={570}
             alt="第28屆全國計算流體力學學術研討會"
