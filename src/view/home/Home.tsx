@@ -57,10 +57,14 @@ const HomePage = () => {
         <Title as="h2">協辦單位</Title>
 
         <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">
+          <li> 臺灣流體力學學會</li>
           <li> 國科會工程司工程科技推廣中心</li>
           <li> 國家高速網路與計算中心</li>
           <li> 國家太空中心</li>
-          <li> 臺灣流體力學學會</li>
+          <li> 虎門科技股份有限公司</li>
+          <li> 易富迪科技有限公司</li>
+          <li> 泓崴科技有限公司</li>
+          <li> 科盛科技股份有限公司</li>
         </ul>
       </div>
     </section>

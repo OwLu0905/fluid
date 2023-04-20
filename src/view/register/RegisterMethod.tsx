@@ -8,7 +8,7 @@ const RegisterMethod = () => {
     <>
       <Title
         as="h2"
-        className="flex items-center before:mr-2 before:content-['•']"
+        className="flex items-center before:mr-2"
       >
         報名方式
       </Title>

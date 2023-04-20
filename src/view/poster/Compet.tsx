@@ -7,7 +7,7 @@ const Compet = () => {
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
             1.
-            本競賽中，包含兩個項目，分別為(a)論文競賽及(b)海報競賽。其中，兩個競賽的評分將各自獨立進行。
+            此次全國計算流力大會與流力學會年會合辦，為擴大論文海報參賽題目範圍，除傳統計算流力相關主題外，主辦單位鼓勵流體力學各個領域(包括實驗與理論)的題目參賽。
           </p>
         </div>
       </li>
@@ -15,28 +15,40 @@ const Compet = () => {
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
             2.
-            參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報。其中，(2)及(3)則將分別自動納入各自獨立的競賽項目之中。若缺漏繳交，則視同放棄參賽資格。
+            獎項方面，除原有針對計算流力的獎項(由航太學會頒發)外，亦將新增兩個針對一般流力領域(不限實驗，理論或計算)的論文獎項。
           </p>
         </div>
       </li>
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            3. 得獎者，大會將提供獎狀及獎金作為鼓勵。
+            3. 本競賽結合論文與海報，參與者除繳交論文外，亦需展示海報，並於規定評分時間由一代表作者在海報旁負責回答問題與解說。若未出席，則視同放棄競賽。
+          </p>
+        </div>
+        <div className="flex flex-wrap">
+          <p className="mr-2 font-normal">
+            4. 參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。
           </p>
         </div>
       </li>
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            4. 摘要、論文全文、及海報的撰寫文字，中英文皆可。
+            5. 得獎者，大會將提供獎狀及獎金作為鼓勵。
           </p>
         </div>
       </li>
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            5. 摘要投稿格式，以兩頁內為限，最終會收錄至會議手冊之中。
+            6. 摘要、論文全文、及海報的撰寫文字，中英文皆可。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div className="flex flex-wrap">
+          <p className="mr-2 font-normal">
+            7. 摘要投稿格式，以兩頁內為限，最終會收錄至會議手冊之中。
             <a
               href="/NCFD_abstract_templete.docx"
               className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400"
@@ -52,7 +64,7 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            6. 論文全文投稿格式，以十頁內為限，內容將參與論文競賽。
+            8. 論文全文投稿格式，以十頁內為限，內容將參與論文競賽。
             <a
               className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400"
               href="/NCFD_full_paper_templete_mandarin.docx"
@@ -75,20 +87,20 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            7. 海報競賽投稿格式僅需在右上方註明清楚海報編號即可，其餘皆
+            9.海報競賽投稿格式，
             <span className="text-red-500">無限制</span>
-            ，內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小
-            90cm X 150 cm，一個展版將規劃放置一幅海報，尺寸最大為A0。）
-            {/* <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
+            惟需注意兩點。第一，需張貼大會標誌，
+            <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
               按我下載.ppt模板
-            </a> */}
+            </a>
+            。第二，在右上方註明清楚海報編號。內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小 90cm X 150 cm，一個展版將規劃放置一幅海報。）
           </p>
         </div>
       </li>
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            8.
+            10.
             海報需自行印製，並提早帶至會場場佈。場佈時間為第一日中午前，撤場時間為第二日中午過後。
           </p>
         </div>
@@ -96,8 +108,16 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            9.
-            海報參與者，需於海報展覽期間，於競賽海報前。若未出席，則視同放棄競賽。
+            11.
+            海報參與者，需於海報展覽期間，於競賽海報前。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div className="flex flex-wrap">
+          <p className="mr-2 font-normal">
+            12.
+            論文海報競賽主題為下(但不限於)
           </p>
         </div>
       </li>

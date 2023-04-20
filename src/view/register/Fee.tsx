@@ -9,7 +9,7 @@ const Fee = () => {
       <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title
           as="h3"
-          className="flex items-center before:mr-2 before:content-['•']"
+          className="flex items-center before:mr-2"
         >
           大會註冊費
           <span className="text-lg sm:text-2xl lg:text-3xl">(劃撥報名)</span>
