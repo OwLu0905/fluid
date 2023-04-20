@@ -49,7 +49,8 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           <Image
             src="./banner/NCFD_web_whitetop_v8.jpg"
             width={1920}
-            height={570}
+            height={660}
+            // height={570}
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
             className="mx-auto block object-cover object-top"
