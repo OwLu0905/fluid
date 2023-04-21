@@ -13,11 +13,11 @@ const Exhibition = () => {
       />
 
       <section className="mx-auto block w-full text-gray-300/80">
-        <Title as="span">
+        {/* <Title as="span">
           <p className="text-gray-400 before:mr-2 before:content-['•']">
             (內容未定案)
           </p>
-        </Title>
+        </Title> */}
         <ExhibitionPage />
       </section>
     </>

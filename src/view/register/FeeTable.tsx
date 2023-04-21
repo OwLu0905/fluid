@@ -13,8 +13,8 @@ const titleTable = [
   },
 ];
 const feeTable: [string, number, number][] = [
-  ["一般人士", 5000, 6000],
-  ["學生身分", 3000, 3500],
+  ["一般人士", 6000, 6500],
+  ["學生身分", 3500, 4000],
   ["隨行眷屬", 1200, 1200],
 ];
 
@@ -36,7 +36,7 @@ const FeeTable = () => {
         <div className="flex border-b-2 border-gray-600/30">
           <div className="flex w-full text-base xs:text-lg md:text-xl xl:text-2xl">
             <div className="flex w-1/3 items-center px-2 md:w-1/5">
-              <p className="w-full text-center">身分/費用</p>
+              <p className="w-full text-center">身分/費用(NTD)</p>
             </div>
 
             {titleTable.map((row) => {
