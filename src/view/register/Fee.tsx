@@ -37,7 +37,13 @@ const Fee = () => {
               </p>
             </div>
           </li>
-          <li>
+        </ul>
+      </div>
+      <div className="mb-6 flex w-full justify-center lg:mb-8 xl:mb-10">
+        <FeeTable />
+      </div>
+      <div>
+      <ul className="mb-6 space-y-4 indent-4 text-base sm:text-lg md:text-xl lg:mb-8 xl:mb-10 xl:text-2xl"> 
             <div className="flex flex-col flex-wrap space-y-2">
               <p className="mr-2 font-normal">
                 註一：註冊費用早鳥優惠截止日：6月19日。
@@ -46,11 +52,7 @@ const Fee = () => {
                 註二：經繳費報名後恕不退費，收據於大會報到時領取。
               </p>
             </div>
-          </li>
-        </ul>
-      </div>
-      <div className="mb-6 flex w-full justify-center lg:mb-8 xl:mb-10">
-        <FeeTable />
+      </ul>
       </div>
     </>
   );
