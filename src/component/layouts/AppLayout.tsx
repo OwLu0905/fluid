@@ -37,15 +37,14 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         </div> */}
 
         <div
-          className="mx-auto mb-6 mt-1 block md:mb-10 md:hidden"
-          data-aos="fade-right"
-          data-aos-duration="800"
+          className="mx-auto mb-0 mt-1 block md:mb-10 md:hidden"
+          data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
         >
           <Image
             src="./banner/NCFD_web_mobile_v4.jpg"
             width={1900}
-            height={600}
+            height={620}
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
             className="mx-auto block object-cover object-top"
@@ -57,7 +56,6 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           data-aos-duration="800"
           data-aos-anchor-placement="top-bottom"
         >
-          {/* <Link href="/"> */}
           <Image
             src="./banner/NCFD_web_whitetop_v9.jpg"
             width={1920}
@@ -67,7 +65,6 @@ const AppLayout: React.ElementType = ({ children }: any) => {
             priority={true}
             className="mx-auto block object-cover object-top"
           />
-          {/* </Link> */}
         </div>
         <div className=" grow ">
           <Container>

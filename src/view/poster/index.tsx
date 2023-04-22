@@ -1,8 +1,9 @@
 import Title from "@/component/utils/Title";
-import React from "react";
+import React, { useEffect } from "react";
 import Compet from "./Compet";
 import Procedure from "./Procedure";
 import PosterList from "@/data/posterlist.json" assert { type: "json" };
+import PostContent from "./PostContent";
 
 interface DateListType {
   id: number;
@@ -24,7 +25,7 @@ const PosterPage = () => {
           (內容未定案)
         </p>
       </Title>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      {/* <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h2">論文徵求範圍</Title>
         <div className="mx-2">
           <ul className="flex flex-col text-lg xs:flex-row xs:flex-wrap md:text-lg lg:text-2xl">
@@ -45,8 +46,12 @@ const PosterPage = () => {
             })}
           </ul>
         </div>
-      </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      </div> */}
+      <div
+        className="mb-6 lg:mb-8 xl:mb-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <Title as="h2">重要日期</Title>
         <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
           {essentialDate.map((item) => {
@@ -63,11 +68,19 @@ const PosterPage = () => {
           })}
         </ul>{" "}
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div
+        className="mb-6 lg:mb-8 xl:mb-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <Title as="h1">論文海報競賽</Title>
         <Compet />
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div
+        className="mb-6 lg:mb-8 xl:mb-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <Title as="h2">投稿流程</Title>
         <Procedure />
       </div>

@@ -51,6 +51,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     AOS.init({
       duration: 800,
+      once: true,
       // delay: 1000,
     });
     AOS.refresh();

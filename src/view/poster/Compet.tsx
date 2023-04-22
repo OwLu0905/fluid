@@ -1,4 +1,6 @@
 import React from "react";
+import PostContent from "./PostContent";
+import PostContentMobile from "./PostContentMobile";
 
 const Compet = () => {
   return (
@@ -22,12 +24,14 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            3. 本競賽結合論文與海報，參與者除繳交論文外，亦需展示海報，並於規定評分時間由一代表作者在海報旁負責回答問題與解說。若未出席，則視同放棄競賽。
+            3.
+            本競賽結合論文與海報，參與者除繳交論文外，亦需展示海報，並於規定評分時間由一代表作者在海報旁負責回答問題與解說。若未出席，則視同放棄競賽。
           </p>
         </div>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            4. 參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。
+            4.
+            參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。
           </p>
         </div>
       </li>
@@ -93,7 +97,8 @@ const Compet = () => {
             <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
               按我下載.ppt模板
             </a>
-            。第二，在右上方註明清楚海報編號。內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小 90cm X 150 cm，一個展版將規劃放置一幅海報。）
+            。第二，在右上方註明清楚海報編號。內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小
+            90cm X 150 cm，一個展版將規劃放置一幅海報。）
           </p>
         </div>
       </li>
@@ -108,17 +113,17 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            11.
-            海報參與者，需於海報展覽期間，於競賽海報前。
+            11. 海報參與者，需於海報展覽期間，於競賽海報前。
           </p>
         </div>
       </li>
       <li>
-        <div className="flex flex-wrap">
-          <p className="mr-2 font-normal">
-            12.
-            論文海報競賽主題為下(但不限於)
-          </p>
+        <div className="mb-2 flex flex-wrap lg:mb-4 xl:mb-6">
+          <p className="mr-2 font-normal">12. 論文海報競賽主題為下(但不限於)</p>
+        </div>
+        <div className="-mx-2 mb-6 lg:mb-8 xl:mb-10">
+          <PostContent />
+          <PostContentMobile />
         </div>
       </li>
     </ul>
