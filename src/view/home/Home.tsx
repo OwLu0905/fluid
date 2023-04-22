@@ -11,7 +11,11 @@ const essentialDate: DateListType[] = [
 
 const HomePage = () => {
   return (
-    <section className="mx-auto block w-full text-gray-300/80">
+    <section
+      className="mx-auto block w-full text-gray-300/80"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h2">重要日期</Title>
         <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">

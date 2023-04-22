@@ -60,7 +60,11 @@ const trafficWay = [
 ];
 const TrafficPage = () => {
   return (
-    <section className="mx-auto block w-full text-gray-300/80">
+    <section
+      className="mx-auto block w-full text-gray-300/80"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       {/* <SimpleMap /> */}
 
       <div className="mb-6 flex flex-col lg:mb-8 xl:mb-10">

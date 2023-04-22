@@ -12,8 +12,12 @@ const Contact = () => {
         description="第28屆全國計算流體力學學術研討會聯絡資訊，聯絡人：周逸儒(Yi-Ju Chou) 教授，國立臺灣大學應用力學研究所。"
       />
 
-      <section className="mx-auto block w-full text-gray-300/80">
-        <div>
+      <section
+        className="mx-auto block w-full text-gray-300/80"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div className="mb-6 lg:mb-8 xl:mb-10">
           <Title as="h3">會議聯絡人</Title>
           <ul className="space-y-2 pb-4 text-base sm:text-lg lg:text-xl">
             <li>

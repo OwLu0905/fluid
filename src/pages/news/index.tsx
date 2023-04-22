@@ -11,7 +11,11 @@ const News = () => {
         description="第28屆全國計算流體力學學術研討會最新消息"
       />
 
-      <section className="mx-auto block w-full text-gray-300/80">
+      <section
+        className="mx-auto block w-full text-gray-300/80"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         {/* <h1 className="pb-4 text-xl sm:text-4xl">
         第28屆全國計算流體力學學術研討會
       </h1> */}

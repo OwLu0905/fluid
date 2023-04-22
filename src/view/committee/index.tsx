@@ -4,7 +4,11 @@ import commitData from "@/data/committee.json" assert { type: "json" };
 
 const CommitteePage = () => {
   return (
-    <section className="mx-auto block w-full text-gray-300/80">
+    <section
+      className="mx-auto block w-full text-gray-300/80"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h2">主任委員會</Title>
         <ul>

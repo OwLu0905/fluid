@@ -52,9 +52,8 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         </div>
         <div
           className="mx-auto mb-6 hidden md:mb-10 md:block"
-          data-aos="fade-right"
+          data-aos="zoom-in"
           data-aos-duration="800"
-          data-aos-anchor-placement="top-bottom"
         >
           <Image
             src="./banner/NCFD_web_whitetop_v9.jpg"

@@ -12,7 +12,11 @@ const Exhibition = () => {
         description="第28屆全國計算流體力學學術研討會流體力學之美展覽"
       />
 
-      <section className="mx-auto block w-full text-gray-300/80">
+      <section
+        className="mx-auto block w-full text-gray-300/80"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <Title as="span">
           <p className="text-gray-400 before:mr-2 before:content-['•']">
             (內容未定案)
