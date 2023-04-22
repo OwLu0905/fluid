@@ -38,8 +38,8 @@ const AppLayout: React.ElementType = ({ children }: any) => {
 
         <div
           className="mx-auto mb-0 mt-1 block md:mb-10 md:hidden"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
+          // data-aos="fade-up"
+          // data-aos-anchor-placement="top-bottom"
         >
           <Image
             src="./banner/NCFD_web_mobile_v4.jpg"
