@@ -1,0 +1,7 @@
+#nprogress {
+  pointer-events: "none";
+}
+
+#nprogress .bar {
+  @apply fixed left-0 top-12 z-[2000] h-[6px] w-full rounded-full bg-gradient-to-r from-violet-400 via-sky-400 to-teal-400 lg:top-0;
+}

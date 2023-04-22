@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Title from "../utils/Title";
 import Navlist from "./Navlist";
+import Link from "next/link";
 
 const MobileNav = () => {
   const [showNav, setShowNav] = useState(true);
@@ -62,9 +63,11 @@ const MobileNav = () => {
               <line x1="4" y1="18" x2="18" y2="18" />
             </svg>
           </button>
-          <h1 className="flex h-12 items-center justify-center bg-gradient-to-r from-sky-500 via-cyan-500 to-violet-400 bg-clip-text text-center text-4xl font-extrabold text-transparent ">
-            NCFD
-          </h1>
+          <Link href="/">
+            <h1 className="flex h-12 cursor-pointer items-center justify-center bg-gradient-to-r from-sky-500 via-cyan-500 to-violet-400 bg-clip-text text-center text-4xl font-extrabold text-transparent ">
+              NCFD
+            </h1>
+          </Link>
           {toggleNav && (
             <aside
               className="absolute right-0 top-11 w-full bg-gradient-to-r from-cyan-900 to-indigo-900/95 px-6  py-4 opacity-100"

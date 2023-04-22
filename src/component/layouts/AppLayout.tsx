@@ -3,6 +3,7 @@ import MobileNav from "../sidebar/MobileNav";
 import Navlist from "../sidebar/Navlist";
 import Container from "../ui/Container";
 import Footer from "./Footer";
+import Link from "next/link";
 const AppLayout: React.ElementType = ({ children }: any) => {
   return (
     <>
@@ -35,9 +36,14 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           />
         </div> */}
 
-        <div className="mx-auto mb-6 block md:mb-10 md:hidden">
+        <div
+          className="mx-auto mb-6 mt-1 block md:mb-10 md:hidden"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-anchor-placement="top-bottom"
+        >
           <Image
-            src="./banner/web_mobile_v2.jpg"
+            src="./banner/NCFD_web_mobile_v4.jpg"
             width={1900}
             height={600}
             alt="第28屆全國計算流體力學學術研討會"
@@ -45,16 +51,23 @@ const AppLayout: React.ElementType = ({ children }: any) => {
             className="mx-auto block object-cover object-top"
           />
         </div>
-        <div className="mx-auto mb-6 hidden md:mb-10 md:block">
+        <div
+          className="mx-auto mb-6 hidden md:mb-10 md:block"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-anchor-placement="top-bottom"
+        >
+          {/* <Link href="/"> */}
           <Image
-            src="./banner/NCFD_web_whitetop_v8.jpg"
+            src="./banner/NCFD_web_whitetop_v9.jpg"
             width={1920}
-            height={660}
+            height={620}
             // height={570}
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
             className="mx-auto block object-cover object-top"
           />
+          {/* </Link> */}
         </div>
         <div className=" grow ">
           <Container>
