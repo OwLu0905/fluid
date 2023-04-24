@@ -94,8 +94,12 @@ const Compet = () => {
             9.海報競賽投稿格式，
             <span className="text-red-500">無限制</span>
             惟需注意兩點。第一，需張貼大會標誌，
-            <a className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400">
-              按我下載.ppt模板
+            <a
+              className="cursor-pointer font-light text-blue-500 underline hover:text-cyan-400"
+              href="/LOGO.psd"
+              download
+            >
+              按我下載
             </a>
             。第二，在右上方註明清楚海報編號。內文則請作者自行排版，內容則將參與海報競賽，並於活動當天展出。（會場展板大小
             90cm X 150 cm，一個展版將規劃放置一幅海報。）
