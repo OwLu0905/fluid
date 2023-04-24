@@ -117,7 +117,7 @@ const Compet = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            11. 海報參與者，需於海報展覽期間，於競賽海報前。
+            11. 海報參與者，需於海報展覽期間（評分時間），於競賽海報前負責回答問題及解說。
           </p>
         </div>
       </li>

@@ -19,6 +19,13 @@ const CommitteePage = () => {
             <p className="text-base font-light text-gray-300/80 md:text-xl">
               臺灣大學應用力學研究所
             </p>
+            <br></br>
+            <p className="text-lg font-bold text-gray-300/90 sm:mr-2 md:text-2xl">
+              齊立平
+            </p>
+            <p className="text-base font-light text-gray-300/80 md:text-xl">
+              中山科學研究院
+            </p>
           </div>
         </ul>
       </div>
