@@ -126,6 +126,12 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
         <link
           rel="icon"
           type="image/png"
+          sizes="48x48"
+          href="/favicon-48x48.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
           sizes="96x96"
           href="/favicon-96x96.png"
         />
