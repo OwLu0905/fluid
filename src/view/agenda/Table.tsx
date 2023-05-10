@@ -35,7 +35,7 @@ const agendaTable: AgendaTableType = {
         annotation: "蕭述三 講座教授",
         type: 1,
       },
-      { time: "10:20-10:45", content: "茶點", type: 0 },
+      { time: "10:20-10:45", content: "茶敘", type: 0 },
       {
         time: "10:45-12:00",
         content: "迷你論壇1",
@@ -48,7 +48,7 @@ const agendaTable: AgendaTableType = {
         content: "海報展⽰",
         type: 3,
       },
-      { time: "14:30-15:00", content: "茶點", type: 0 },
+      { time: "14:30-15:00", content: "茶敘", type: 0 },
       { time: "15:00-16:10", content: "⼯業論壇", type: 0 },
       { time: "18:00-20:00", content: "晚宴", type: 0 },
     ],
@@ -63,7 +63,7 @@ const agendaTable: AgendaTableType = {
         annotation: "Prof. KunihikoTaira, UCLA",
         type: 1,
       },
-      { time: "10:20-10:45", content: "茶點", type: 0 },
+      { time: "10:20-10:45", content: "茶敘", type: 0 },
       {
         time: "10:45-12:00",
         content: "迷你論壇2",
@@ -77,7 +77,7 @@ const agendaTable: AgendaTableType = {
         annotation: "河海工程應用",
         type: 2,
       },
-      { time: "14:15-14:45", content: "茶點", type: 0 },
+      { time: "14:15-14:45", content: "茶敘", type: 0 },
       {
         time: "14:45-16:00",
         content: "迷你論壇4",
@@ -119,8 +119,8 @@ const agendaPCTableOri: {
       },
     ],
     [
-      { time: "10:20 - 10:45", content: "茶點", type: 0 },
-      { time: "10:20 - 10:45", content: "茶點", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
     ],
     [
       {
@@ -154,8 +154,8 @@ const agendaPCTableOri: {
       },
     ],
     [
-      { time: "14:30 - 15:00", content: "茶點", type: 0 },
-      { time: "14:15 - 14:45", content: "茶點", type: 0 },
+      { time: "14:30 - 15:00", content: "茶敘", type: 0 },
+      { time: "14:15 - 14:45", content: "茶敘", type: 0 },
     ],
     [
       { time: "15:00 - 16:10", content: "⼯業論壇", type: 0 },
@@ -203,8 +203,8 @@ const agendaPCTableBefore: {
       },
     ],
     [
-      { time: "10:20 - 10:45", content: "茶點", type: 0 },
-      { time: "10:20 - 10:45", content: "茶點", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
     ],
     [
       {
@@ -258,8 +258,8 @@ const agendaPCTableAfter: {
   name: ["第一天", "第二天"],
   list: [
     [
-      { time: "14:30 - 15:00", content: "茶點", type: 0 },
-      { time: "14:15 - 14:45", content: "茶點", type: 0 },
+      { time: "14:30 - 15:00", content: "茶敘", type: 0 },
+      { time: "14:15 - 14:45", content: "茶敘", type: 0 },
     ],
     [
       { time: "15:00 - 16:10", content: "⼯業論壇", type: 0 },

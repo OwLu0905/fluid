@@ -20,11 +20,11 @@ const essentialDate: DateListType[] = [
 const PosterPage = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
-      <Title as="span">
+      {/* <Title as="span">
         <p className="text-gray-400 before:mr-2 before:content-['•']">
           (內容未定案)
         </p>
-      </Title>
+      </Title> */}
       {/* <div className="mb-6 lg:mb-8 xl:mb-10">
         <Title as="h2">論文徵求範圍</Title>
         <div className="mx-2">
