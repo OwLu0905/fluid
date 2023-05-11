@@ -73,16 +73,16 @@ const PosterPage = () => {
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
-        <Title as="h1">論文海報競賽</Title>
-        <Compet />
+        <Title as="h2">投稿流程</Title>
+        <Procedure />
       </div>
       <div
         className="mb-6 lg:mb-8 xl:mb-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
-        <Title as="h2">投稿流程</Title>
-        <Procedure />
+        <Title as="h1">論文海報競賽</Title>
+        <Compet />
       </div>
     </section>
   );
