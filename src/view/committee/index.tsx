@@ -10,7 +10,7 @@ const CommitteePage = () => {
       data-aos-anchor-placement="top-bottom"
     >
       <div className="mb-6 lg:mb-8 xl:mb-10">
-        <Title as="h2">主任委員會</Title>
+        <Title as="h2">主任委員</Title>
         <ul>
           <div className="mb-4 flex flex-col justify-center sm:mr-4 sm:w-[45%]">
             <p className="text-lg font-bold text-gray-300/90 sm:mr-2 md:text-2xl">
