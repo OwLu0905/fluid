@@ -35,9 +35,9 @@ const agendaTable: AgendaTableType = {
         annotation: "蕭述三 講座教授",
         type: 1,
       },
-      { time: "10:20-10:45", content: "茶敘", type: 0 },
+      { time: "10:20-10:50", content: "茶敘", type: 0 },
       {
-        time: "10:45-12:00",
+        time: "10:50-12:00",
         content: "迷你論壇1",
         annotation: "(中科院)",
         type: 2,
@@ -60,12 +60,12 @@ const agendaTable: AgendaTableType = {
       {
         time: "09:30-10:20",
         content: "⼤會演講2",
-        annotation: "Prof. KunihikoTaira, UCLA",
+        annotation: "Prof. Kunihiko Taira, UCLA",
         type: 1,
       },
-      { time: "10:20-10:45", content: "茶敘", type: 0 },
+      { time: "10:20-10:50", content: "茶敘", type: 0 },
       {
-        time: "10:45-12:00",
+        time: "10:50-12:00",
         content: "迷你論壇2",
         annotation: "國家太空中心 高速網路計算中心",
         type: 2,
@@ -114,23 +114,23 @@ const agendaPCTableOri: {
       {
         time: "09:30 - 10:20",
         content: "⼤會演講2",
-        annotation: "Prof. KunihikoTaira, UCLA",
+        annotation: "Prof. Kunihiko Taira, UCLA",
         type: 1,
       },
     ],
     [
-      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
-      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
     ],
     [
       {
-        time: "10:45 - 12:00",
+        time: "10:50 - 12:00",
         content: "迷你論壇1",
         annotation: "(中科院)",
         type: 2,
       },
       {
-        time: "10:45 - 12:00",
+        time: "10:50 - 12:00",
         content: "迷你論壇2",
         annotation: "國家太空中心＆高速網路計算中心",
         type: 2,
@@ -198,23 +198,23 @@ const agendaPCTableBefore: {
       {
         time: "09:30 - 10:20",
         content: "⼤會演講2",
-        annotation: "Prof. KunihikoTaira, UCLA",
+        annotation: "Prof. Kunihiko Taira, UCLA",
         type: 1,
       },
     ],
     [
-      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
-      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
     ],
     [
       {
-        time: "10:45 - 12:00",
+        time: "10:50 - 12:00",
         content: "迷你論壇1",
         annotation: "(中科院)",
         type: 2,
       },
       {
-        time: "10:45 - 12:00",
+        time: "10:50 - 12:00",
         content: "迷你論壇2",
         annotation: "國家太空中心 高速網路計算中心",
         type: 2,
