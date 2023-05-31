@@ -1,0 +1,37 @@
+[
+  {
+    "name": "北投亞太飯店",
+    "address": "112台北市北投區幽雅路31號",
+    "website": "https://www.apresort.com.tw",
+    "googleMap": "https://goo.gl/maps/aTPChdohhBCQk7gXA",
+    "position": "25.1370363,121.5121007"
+  },
+  {
+    "name": "Spring City Resort 春天酒店",
+    "address": "112台北市北投區幽雅路18號",
+    "website": "http://www.springresort.com.tw",
+    "googleMap": "https://goo.gl/maps/quEiHRmrusDxMy9w7",
+    "position": "25.1376028,121.5086901"
+  },
+  {
+    "name": "北投麗之湯溫泉會館",
+    "address": "112台北市北投區溫泉路銀光巷4-1號",
+    "website": "http://ghsr.com.tw",
+    "googleMap": " https://goo.gl/maps/W5omaCP4fymAwpXe8",
+    "position": "25.1361568,121.5090893"
+  },
+  {
+    "name": "曲水會館",
+    "address": "112台北市北投區溫泉路105號",
+    "website": "http://www.kshotspring.com",
+    "googleMap": "https://goo.gl/maps/kuQ2RLoERieE79sP8",
+    "position": "25.1364682,121.5071869"
+  },
+  {
+    "name": "三二行館 Villa 32",
+    "address": "112台北市北投區中山路32號",
+    "website": "https://www.villa32.com/zh-tw",
+    "googleMap": "https://goo.gl/maps/nuAwcjW9bPjVqvdL8",
+    "position": "25.137715,121.5054989"
+  }
+]

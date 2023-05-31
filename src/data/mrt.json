@@ -1,0 +1,30 @@
+[
+  {
+    "name": "大地酒店",
+    "address": "112台北市北投區奇岩路1號",
+    "website": "https://www.thegaiahotel.com",
+    "googleMap": "https://goo.gl/maps/T8Sk4LReHDHSoDgi9",
+    "position": "25.1350191,121.5044129"
+  },
+  {
+    "name": "嘉賓閣溫泉會館",
+    "address": "112台北市北投區光明路230號",
+    "website": "https://www.jbg-hotel.com.tw",
+    "googleMap": "https://goo.gl/maps/AGixpGcUePJWqwXS6",
+    "position": "25.1358843,121.5034208"
+  },
+  {
+    "name": "北投水美溫泉會館",
+    "address": "112台北市北投區光明路224號",
+    "website": "http://www.sweetme.com.tw",
+    "googleMap": "https://goo.gl/maps/JGTqquNn3VqamnVg7",
+    "position": "25.136124,121.5024362"
+  },
+  {
+    "name": "南豐天玥泉會館",
+    "address": "112台北市北投區中山路3號",
+    "website": "http://www.tyq.com.tw",
+    "googleMap": "https://goo.gl/maps/U6LMUTMms3k1A2Nx7",
+    "position": "25.1372917,121.5028649"
+  }
+]
