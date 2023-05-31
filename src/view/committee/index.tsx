@@ -9,7 +9,7 @@ const CommitteePage = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">主任委員</Title>
         <ul>
           <div className="mb-4 flex flex-col justify-center sm:mr-4 sm:w-[45%]">
@@ -29,7 +29,7 @@ const CommitteePage = () => {
           </div>
         </ul>
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">
           籌備委員會
           <span className="block text-lg sm:text-xl md:inline-block lg:text-2xl">

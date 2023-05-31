@@ -48,7 +48,7 @@ const PosterPage = () => {
         </div>
       </div> */}
       <div
-        className="mb-6 lg:mb-8 xl:mb-10"
+        className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -69,7 +69,7 @@ const PosterPage = () => {
         </ul>{" "}
       </div>
       <div
-        className="mb-6 lg:mb-8 xl:mb-10"
+        className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -77,7 +77,7 @@ const PosterPage = () => {
         <Procedure />
       </div>
       <div
-        className="mb-6 lg:mb-8 xl:mb-10"
+        className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >

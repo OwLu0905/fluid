@@ -4,12 +4,12 @@ import React from "react";
 
 const newTable = [
   {
-    time: "2023.05.11.", 
+    time: "2023.05.11.",
     content:
       "為了促進競賽活動，大會在「論文海報競賽」及「流體力學之美展覽」中，公佈了競賽獎項所對應的獎金，歡迎各個領域的專家學者，一同推廣。",
   },
   {
-    time: "2023.04.23.", 
+    time: "2023.04.23.",
     content:
       "網頁中僅「大會演講」及「論壇發表」正在建置中，其餘項目皆已完成。歡迎全國各個領域的專家學者一同共襄盛舉。",
   },
@@ -17,7 +17,7 @@ const newTable = [
 const NewsPage = () => {
   return (
     <div
-      className="mb-6 lg:mb-8 xl:mb-10"
+      className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >

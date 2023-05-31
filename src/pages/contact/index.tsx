@@ -17,7 +17,7 @@ const Contact = () => {
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
-        <div className="mb-6 lg:mb-8 xl:mb-10">
+        <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
           <Title as="h3">會議聯絡人</Title>
           <ul className="space-y-2 pb-4 text-base sm:text-lg lg:text-xl">
             <li>

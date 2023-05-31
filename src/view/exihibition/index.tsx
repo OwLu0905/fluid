@@ -6,7 +6,7 @@ import React from "react";
 const ExhibitionPage = () => {
   return (
     <>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">流體力學之美展覽：</Title>
         <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
           <li className="font-normal">
@@ -24,33 +24,32 @@ const ExhibitionPage = () => {
           <li className="font-normal">
             大會無提供展覽模板，請自行發會創意。
             <br />
-            （會場展板大小 90cm X 150
-            cm，一個展版將規劃放置一幅海報。）
+            （會場展板大小 90cm X 150 cm，一個展版將規劃放置一幅海報。）
           </li>
           <li className="font-normal">
             展覽海報需自行印製，並提早帶至會場佈置。場佈時間為第一日中午前，撤場時間為第二日中午過後。
           </li>
           <li className="font-normal">
-          流體力學之美獎項，若超過10幅海報張貼，將會有競賽獎金作為鼓勵。歡迎各領域的專家學者一同推廣流體力學之美。獎金分別為新台幣8,000元（第一名）、5,000元（第二名）、及3,000元（第三名）。
+            流體力學之美獎項，若超過10幅海報張貼，將會有競賽獎金作為鼓勵。歡迎各領域的專家學者一同推廣流體力學之美。獎金分別為新台幣8,000元（第一名）、5,000元（第二名）、及3,000元（第三名）。
           </li>
         </ol>
       </div>
 
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">畫廊徵求範圍</Title>
         <p className="text-base sm:text-lg md:text-xl xl:text-2xl">
           與論文海報競賽一致，並且特別歡迎國內進行實驗的流體力學專家也能夠參與此次展覽，共同體現流體力學之美。
         </p>
       </div>
 
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">重要日期</Title>
         <p className="text-base sm:text-lg  md:text-xl xl:text-2xl">
           流體力學之美展覽海報上傳截止日：2023年8月7日（星期一）
         </p>
       </div>
 
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">投稿流程：</Title>
         <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
           <li className="flex flex-wrap font-normal">

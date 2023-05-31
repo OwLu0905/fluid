@@ -16,7 +16,7 @@ const HomePage = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">重要日期</Title>
         <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
           {essentialDate.map((item) => {
@@ -34,7 +34,7 @@ const HomePage = () => {
         </ul>
       </div>
       {/* <br></br> */}
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">地點：</Title>
         <h3 className="py-2 text-base font-semibold sm:text-2xl">
           北投亞太飯店
@@ -50,14 +50,14 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">主辦單位</Title>
         <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">
           <li> 中華民國航空太空學會</li>
           <li> 國立臺灣大學應用力學研究所</li>
         </ul>
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">協辦單位</Title>
 
         <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">

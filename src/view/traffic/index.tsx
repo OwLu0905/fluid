@@ -67,7 +67,7 @@ const TrafficPage = () => {
     >
       {/* <SimpleMap /> */}
 
-      <div className="mb-6 flex flex-col lg:mb-8 xl:mb-10">
+      <div className="mb-6 flex flex-col lg:mb-8 lg:ml-4 xl:mb-10">
         <div>
           <Title as="h3">會議地點</Title>
           <p className="text-base sm:text-lg md:text-xl xl:text-2xl">
@@ -116,10 +116,18 @@ const TrafficPage = () => {
           </div>
         </div>
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
-        <CustomMap />
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.960201565933!2d121.51210067605304!3d25.137036334133704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442af6ebfe943cd%3A0x9f5ef36489bbe33c!2z5YyX5oqV5Lqe5aSq6aOv5bqX77yN5Y-w5YyXIOWMl-aKlSDmuqvms4npo6_lupfvvZzlj7DljJfpoILntJrms6Hmua_vvZzms6Hmua_kvY_lrr_vvZzml4XpgYrkvY_lrr_vvZzmnIPorbDloLTlnLDnp5_lgJ_vvZzljJfmipXkvY_miL_mjqjolqY!5e0!3m2!1szh-TW!2stw!4v1685537426949!5m2!1szh-TW!2stw"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <div className="mb-6 lg:mb-8 xl:mb-10">
+      <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h3">交通資訊</Title>
         {trafficWay.map((item) => {
           return (
@@ -127,7 +135,7 @@ const TrafficPage = () => {
               <p className="mb-4 text-lg font-bold text-blue-400  md:text-xl lg:mb-6 lg:text-2xl ">
                 {item.name}
               </p>
-              <ul className="lg:space-y-r2 flex flex-col space-y-2 text-base sm:text-lg md:space-y-4 md:text-xl xl:text-2xl">
+              <ul className="flex flex-col space-y-2 text-base sm:text-lg md:space-y-4 md:text-xl lg:space-y-2 xl:text-2xl">
                 {item.lists.map((i) => {
                   return (
                     <li key={i.main} className="mb-2">
