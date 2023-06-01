@@ -31,6 +31,27 @@ const AccommodationPage = () => {
   return (
     <div className="flex flex-col">
       <div className="mb-6 flex flex-col items-center md:flex-row md:items-start lg:ml-4 lg:mb-8 lg:flex-col lg:items-center xl:mb-10 xl:flex-row xl:items-center">
+        {/* <div className="w-full md:w-2/3 lg:w-full xl:w-2/3"> */}
+        <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
+        <Title as="h2">北投亞太飯店（會議地點）</Title>
+        <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+        <li className="font-normal">
+          會議報名費用，尚未包含住宿金額。若您有住宿的需求，將會額外負擔住宿費用。
+        </li>
+        <li className="font-normal">
+          本會議已與北投亞太飯店談妥優惠的住宿價格，每間房型可容納2人，且每間皆有提供獨立的泡湯設備。客房房型及價格，如下：
+          <br></br>
+          (1)經典客房：兩小床、和風榻榻米。（原價：12,900+10%元，會議價格：5,500元）
+          <br></br>
+          (2) 豪華客房：一大床、兩中床。（原價：15,900+10%，會議價格：6,500元）
+        </li>
+        <li className="font-normal">
+        住宿額外的飯店服務：隔日早餐、1F泳池及旁邊酒吧使用權。
+        </li>
+        </ol>
+        </div>
+        </div>
+      <div className="mb-6 flex flex-col items-center md:flex-row md:items-start lg:ml-4 lg:mb-8 lg:flex-col lg:items-center xl:mb-10 xl:flex-row xl:items-center">
         <div className="w-full md:w-2/3 lg:w-full xl:w-2/3">
           <Title as="h2">北投亞太飯店周圍</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
