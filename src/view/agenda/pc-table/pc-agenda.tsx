@@ -97,8 +97,8 @@ const agendaPCTableAfter: {
 
 const PcAgendaTable = () => {
   return (
-    <div className="hidden w-full sm:flex xl:mx-10">
-      <div className="-mx-4 flex flex-col border border-gray-600/20 bg-transparent">
+    <div className="hidden w-full sm:flex">
+      <div className="-mx-4 flex w-full flex-col border border-gray-600/20 bg-transparent">
         <div className="flex w-full flex-row space-x-0">
           {agendaPCTableBefore.name.map((name, index) => {
             return (

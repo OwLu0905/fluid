@@ -6,13 +6,12 @@ type AgendaPageProps = {
   tableData: [string, string, string, string][];
 };
 
-const AgendaPage = (props: AgendaPageProps) => {
-  const { tableData } = props;
+const AgendaPage = () => {
   return (
     <>
       <Title>議程</Title>
 
-      <AgendaTable tableData={tableData} />
+      <AgendaTable />
     </>
   );
 };
