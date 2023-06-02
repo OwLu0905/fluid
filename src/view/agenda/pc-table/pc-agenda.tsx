@@ -81,7 +81,7 @@ const agendaPCTableAfter: {
     ],
     [
       {
-        time: "15:40 - 16:10",
+        time: "15:40 - 17:30",
         content: "海報展覽",
         annotation: "成果交流",
         type: 0,
