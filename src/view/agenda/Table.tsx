@@ -28,18 +28,18 @@ const agendaTable: AgendaTableType = {
   day1: {
     name: "第一天",
     list: [
-      { time: "09:20 - 09:30", content: "開幕", type: 0 },
+      { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
       {
         time: "09:30-10:20",
         content: "⼤會演講1",
         annotation: "蕭述三 講座教授",
         type: 1,
       },
-      { time: "10:20-10:50", content: "茶敘", type: 0 },
+      { time: "10:20-10:45", content: "茶敘", type: 0 },
       {
-        time: "10:50-12:00",
+        time: "10:45-12:00",
         content: "迷你論壇1",
-        annotation: "(中科院)",
+        annotation: "(中山科學研究院)",
         type: 2,
       },
       { time: "12:00-13:00", content: "午餐", type: 0 },
@@ -48,8 +48,12 @@ const agendaTable: AgendaTableType = {
         content: "海報展⽰",
         type: 3,
       },
-      { time: "14:30-15:00", content: "茶敘", type: 0 },
-      { time: "15:00-16:10", content: "⼯業論壇", type: 0 },
+      { time: "14:30-15:40", 
+        content: "迷你論壇2",
+        annotation: "國家太空中心 高速網路計算中心",
+        type: 2,
+      },
+      { time: "15:40-16:10", content: "海報展覽 成果交流", type: 0 },
       { time: "18:00-20:00", content: "晚宴", type: 0 },
     ],
   },
@@ -66,24 +70,19 @@ const agendaTable: AgendaTableType = {
       { time: "10:20-10:50", content: "茶敘", type: 0 },
       {
         time: "10:50-12:00",
-        content: "迷你論壇2",
-        annotation: "國家太空中心 高速網路計算中心",
+        content: "迷你論壇3",
+        annotation: "紊流模擬",
         type: 2,
       },
       { time: "12:00-13:00", content: "午餐", type: 0 },
       {
         time: "13:00-14:15",
-        content: "迷你論壇3",
+        content: "迷你論壇4",
         annotation: "河海工程應用",
         type: 2,
       },
       { time: "14:15-14:45", content: "茶敘", type: 0 },
-      {
-        time: "14:45-16:00",
-        content: "迷你論壇4",
-        annotation: "紊流模擬",
-        type: 2,
-      },
+      { time: "14:45-16:00",content: "工業論壇",type: 0,},
       { time: "16:00-17:00", content: "閉幕及頒獎", type: 0 },
     ],
   },
@@ -119,20 +118,20 @@ const agendaPCTableOri: {
       },
     ],
     [
-      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
       { time: "10:20 - 10:50", content: "茶敘", type: 0 },
     ],
     [
       {
-        time: "10:50 - 12:00",
+        time: "10:45 - 12:00",
         content: "迷你論壇1",
-        annotation: "(中科院)",
+        annotation: "(中山科學研究院)",
         type: 2,
       },
       {
         time: "10:50 - 12:00",
-        content: "迷你論壇2",
-        annotation: "國家太空中心＆高速網路計算中心",
+        content: "迷你論壇3",
+        annotation: "紊流模擬",
         type: 2,
       },
     ],
@@ -148,23 +147,23 @@ const agendaPCTableOri: {
       },
       {
         time: "13:00 - 14:15",
-        content: "迷你論壇3",
+        content: "迷你論壇4",
         annotation: "河海工程應用",
         type: 2,
       },
     ],
     [
-      { time: "14:30 - 15:00", content: "茶敘", type: 0 },
+      { time: "14:30 - 15:40", 
+        content: "迷你論壇2", 
+        annotation:"國家太空中心＆高速網路計算中心",
+        type: 2 
+      },
       { time: "14:15 - 14:45", content: "茶敘", type: 0 },
     ],
     [
-      { time: "15:00 - 16:10", content: "⼯業論壇", type: 0 },
+      { time: "15:40 - 16:10", content: "海報展覽＆成果交流", type: 0 },
       {
-        time: "14:45 - 16:00",
-        content: "迷你論壇4",
-        annotation: "紊流模擬",
-        type: 2,
-      },
+        time: "14:45 - 16:00", content: "⼯業論壇", type: 0 },
     ],
     [
       { time: "18:00 - 20:00", content: "晚宴", type: 0 },
@@ -185,7 +184,7 @@ const agendaPCTableBefore: {
   name: ["第一天", "第二天"],
   list: [
     [
-      { time: "09:20 - 09:30", content: "開幕", type: 0 },
+      { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
       { time: "09:20 - 09:30", content: "/", type: 0 },
     ],
     [
@@ -203,20 +202,20 @@ const agendaPCTableBefore: {
       },
     ],
     [
-      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
       { time: "10:20 - 10:50", content: "茶敘", type: 0 },
     ],
     [
       {
-        time: "10:50 - 12:00",
+        time: "10:45 - 12:00",
         content: "迷你論壇1",
-        annotation: "(中科院)",
+        annotation: "(中山科學研究院)",
         type: 2,
       },
       {
         time: "10:50 - 12:00",
-        content: "迷你論壇2",
-        annotation: "國家太空中心 高速網路計算中心",
+        content: "迷你論壇3",
+        annotation: "紊流模擬",
         type: 2,
       },
     ],
@@ -258,17 +257,16 @@ const agendaPCTableAfter: {
   name: ["第一天", "第二天"],
   list: [
     [
-      { time: "14:30 - 15:00", content: "茶敘", type: 0 },
+      { time: "14:30 - 15:40", 
+        content: "迷你論壇2",
+        annotation:"國家太空中心＆高速網路計算中心", 
+        type: 2 
+      },
       { time: "14:15 - 14:45", content: "茶敘", type: 0 },
     ],
     [
-      { time: "15:00 - 16:10", content: "⼯業論壇", type: 0 },
-      {
-        time: "14:45 - 16:00",
-        content: "迷你論壇4",
-        annotation: "紊流模擬",
-        type: 2,
-      },
+      { time: "15:40 - 16:10", content: "海報展覽＆成果交流", type: 0 },
+      { time: "14:45 - 16:00", content: "工業論壇",type: 0,},
     ],
     [
       { time: "18:00 - 20:00", content: "晚宴", type: 0 },
