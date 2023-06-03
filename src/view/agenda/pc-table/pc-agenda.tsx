@@ -104,9 +104,8 @@ const PcAgendaTable = () => {
             return (
               <time
                 key={name}
-                className={`w-1/2 border-b-2 border-none border-gray-900/20 bg-blue-900/60  py-2  pl-4 text-center text-xl text-white  lg:py-4 lg:pl-8  xl:text-2xl ${
-                  index === 0 ? " " : " "
-                }`}
+                className={`w-1/2 border-b-2 border-none border-gray-900/20 bg-blue-900/60  py-2 pl-4 text-center text-xl text-white  lg:py-4 lg:pl-8 xl:text-2xl ${index === 0 ? " " : " "
+                  }`}
               >
                 {name}
               </time>
@@ -253,7 +252,15 @@ const PcAgendaTable = () => {
                               </span>
                             </div>
                           ) : (
-                            <> {list[0]?.annotation}</>
+                            <div
+                              className={`${list[0]?.annotation === "成果交流"
+                                  ? "font-normal text-gray-300/80"
+                                  : ""
+                                }`}
+                            >
+                              {" "}
+                              {list[0]?.annotation}
+                            </div>
                           )}
                         </div>
                       )}
@@ -274,7 +281,7 @@ const PcAgendaTable = () => {
                       </h4>
 
                       {list[1]?.annotation && (
-                        <p className="my-1 font-light  text-yellow-600/80">
+                        <p className="my-1 font-light text-yellow-600/80">
                           {list[1]?.annotation ?? ""}
                         </p>
                       )}

@@ -5,9 +5,9 @@ import type { AgendaTableType } from "./Table";
 
 const tagStyle = {
   0: "",
-  1: "bg-gradient-to-r  from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md shadow-green-300/60",
-  2: "bg-gradient-to-r  from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md shadow-sky-300/60",
-  3: "bg-gradient-to-r  from-purple-300/80 to-fuchsia-300/80 text-purple-800/80 shadow-md shadow-rose-300/60",
+  1: "bg-gradient-to-r from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md shadow-green-300/60",
+  2: "bg-gradient-to-r from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md shadow-sky-300/60",
+  3: "bg-gradient-to-r from-purple-300/80 to-fuchsia-300/80 text-purple-800/80 shadow-md shadow-rose-300/60",
 };
 
 const agendaTable: AgendaTableType = {
@@ -157,7 +157,14 @@ const MobileTable = () => {
                                     </div>
                                   </div>
                                 ) : (
-                                  item?.annotation
+                                  <div
+                                    className={`${item?.annotation === "成果交流"
+                                        ? "font-normal text-gray-300/80"
+                                        : ""
+                                      }`}
+                                  >
+                                    {item?.annotation}
+                                  </div>
                                 )}
                               </div>
                             )}
@@ -198,7 +205,14 @@ const MobileTable = () => {
                                   </div>
                                 </div>
                               ) : (
-                                item?.annotation
+                                <div
+                                  className={`${item?.annotation === "成果交流"
+                                      ? "font-normal text-gray-300/80"
+                                      : ""
+                                    }`}
+                                >
+                                  {item?.annotation}
+                                </div>
                               )}
                             </div>
                           )}

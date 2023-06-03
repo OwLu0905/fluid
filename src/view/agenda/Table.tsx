@@ -1,13 +1,6 @@
-import React, { useState } from "react";
-import classNames from "classnames";
-import { Tab } from "@headlessui/react";
-import SpecialAgendaTable from "./SpecialTable";
+import React from "react";
 import MobileTable from "./mobile-table";
 import PcAgendaTable from "./pc-table/pc-agenda";
-
-type AgendaPageProps = {
-  tableData: [string, string, string, string][];
-};
 
 type AgendaTableListType = {
   time: string;
