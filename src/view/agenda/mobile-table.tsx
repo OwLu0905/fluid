@@ -72,7 +72,7 @@ const MobileTable = () => {
           type: 2,
         },
         { time: "14:15 - 14:45", content: "茶敘", type: 0 },
-        { time: "14:45 - 16:00", content: "工業論壇", type: 0 },
+        { time: "14:45 - 16:00", content: "工業論壇", type: 4 },
         { time: "16:00 - 17:00", content: "閉幕及頒獎", type: 0 },
       ],
     },
