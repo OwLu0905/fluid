@@ -2,11 +2,15 @@ import React from "react";
 import classNames from "classnames";
 import SpecialAgendaTable from "../SpecialTable";
 
-const tagStyle = {
+
+export const tagStyle = {
   0: "",
-  1: "bg-gradient-to-r  from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md shadow-green-300/60",
-  2: "bg-gradient-to-r  from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md shadow-sky-300/60",
-  3: "bg-gradient-to-r  from-purple-300/80 to-fuchsia-300/80 text-purple-800/80 shadow-md shadow-rose-300/60",
+  1: "bg-gradient-to-tr from-indigo-300/80 to-gray-100/80 text-indigo-800/80 shadow-md shadow-zinc-100/60",
+  2: "bg-gradient-to-tr from-sky-300/80 to-slate-100/80 text-sky-800/80 shadow-md shadow-sky-300/60", // blue
+  3: "bg-gradient-to-tr from-purple-300/80 to-violet-100/80 text-purple-800/80 shadow-md shadow-rose-300/60", // purple
+  4: "bg-gradient-to-tr from-rose-300/80 to-pink-100/80 text-rose-800/80 shadow-md shadow-orange-300/60", // red
+  5: "bg-gradient-to-tr from-blue-300/80 to-violet-100/80 text-blue-900/80 shadow-md shadow-sky-300/60",
+  6: "bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 text-emerald-800/80 shadow-md shadow-green-300/60", // green
 };
 
 const agendaPCTableBefore: {
@@ -14,7 +18,7 @@ const agendaPCTableBefore: {
   list: Array<{
     time: string;
     content: string;
-    type: 0 | 1 | 2 | 3;
+    type: keyof typeof tagStyle,
     annotation?: string;
   }>[];
 } = {
@@ -64,7 +68,7 @@ const agendaPCTableAfter: {
   list: Array<{
     time: string;
     content: string;
-    type: 0 | 1 | 2 | 3;
+    type: keyof typeof tagStyle,
     annotation?: string;
   }>[];
 } = {
@@ -84,9 +88,9 @@ const agendaPCTableAfter: {
         time: "15:40 - 17:30",
         content: "海報展覽",
         annotation: "成果交流",
-        type: 0,
+        type: 5,
       },
-      { time: "14:45 - 16:00", content: "工業論壇", type: 0 },
+      { time: "14:45 - 16:00", content: "工業論壇", type: 4 },
     ],
     [
       { time: "18:00 - 20:00", content: "晚宴", type: 0 },
@@ -211,16 +215,11 @@ const PcAgendaTable = () => {
 
           {agendaPCTableAfter.list.map(
             (
-              list: Array<{
-                time: string;
-                content: string;
-                type: number;
-                annotation?: string;
-              }>,
+              list ,
               index: number
             ) => {
-              const type1 = list[0].type as 0 | 1 | 2 | 3;
-              const type2 = list[1].type as 0 | 1 | 2 | 3;
+              const type1 = list[0].type 
+              const type2 = list[1].type
 
               return (
                 <div
@@ -252,9 +251,11 @@ const PcAgendaTable = () => {
                               </span>
                             </div>
                           ) : (
+
+
                             <div
                               className={`${list[0]?.annotation === "成果交流"
-                                  ? "font-normal text-gray-300/80"
+                                  ? "px-4 py-1 md:px-6 md:py-2 rounded-2xl font-normal bg-gradient-to-tr from-emerald-200/80 to-green-100/80 text-emerald-800 shadow-md shadow-green-300/60"
                                   : ""
                                 }`}
                             >

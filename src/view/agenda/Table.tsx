@@ -1,12 +1,12 @@
 import React from "react";
 import MobileTable from "./mobile-table";
-import PcAgendaTable from "./pc-table/pc-agenda";
+import PcAgendaTable, { tagStyle } from "./pc-table/pc-agenda";
 
 type AgendaTableListType = {
   time: string;
   content: string;
   annotation?: string;
-  type: 0 | 1 | 2 | 3;
+  type: keyof typeof tagStyle
 }[];
 
 export type AgendaTableType = {

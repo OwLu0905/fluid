@@ -2,86 +2,82 @@ import React from "react";
 import classNames from "classnames";
 import { Tab } from "@headlessui/react";
 import type { AgendaTableType } from "./Table";
+import { tagStyle } from "./pc-table/pc-agenda";
 
-const tagStyle = {
-  0: "",
-  1: "bg-gradient-to-r from-emerald-300/80 to-teal-300/80 text-emerald-800 shadow-md shadow-green-300/60",
-  2: "bg-gradient-to-r from-sky-300/80 to-cyan-300/80 text-sky-800  shadow-md shadow-sky-300/60",
-  3: "bg-gradient-to-r from-purple-300/80 to-fuchsia-300/80 text-purple-800/80 shadow-md shadow-rose-300/60",
-};
-
-const agendaTable: AgendaTableType = {
-  day1: {
-    name: "第一天",
-    list: [
-      { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
-      {
-        time: "09:30-10:20",
-        content: "⼤會演講1",
-        annotation: "蕭述三 講座教授",
-        type: 1,
-      },
-      { time: "10:20 - 10:45", content: "茶敘", type: 0 },
-      {
-        time: "10:45 - 12:00",
-        content: "迷你論壇1",
-        annotation: "(中山科學研究院)",
-        type: 2,
-      },
-      { time: "12:00 - 13:00", content: "午餐", type: 0 },
-      {
-        time: "13:00 - 14:30",
-        content: "海報展⽰",
-        type: 3,
-      },
-      {
-        time: "14:30 - 15:40",
-        content: "迷你論壇2",
-        annotation: "國家太空中心 高速網路計算中心",
-        type: 2,
-      },
-      // { time: "15:40-16:10", content: "海報展覽 成果交流", type: 0 },
-      {
-        time: "15:40 - 17:30",
-        content: "海報展覽",
-        annotation: "成果交流",
-        type: 0,
-      },
-      { time: "18:00 - 20:00", content: "晚宴", type: 0 },
-    ],
-  },
-  day2: {
-    name: "第二天",
-    list: [
-      { time: "09:30 - 10:20", content: "/", type: 0 },
-      {
-        time: "09:30 - 10:20",
-        content: "⼤會演講2",
-        annotation: "Prof. Kunihiko Taira, UCLA",
-        type: 1,
-      },
-      { time: "10:20 - 10:50", content: "茶敘", type: 0 },
-      {
-        time: "10:50 - 12:00",
-        content: "迷你論壇3",
-        annotation: "紊流模擬",
-        type: 2,
-      },
-      { time: "12:00 - 13:00", content: "午餐", type: 0 },
-      {
-        time: "13:00 - 14:15",
-        content: "迷你論壇4",
-        annotation: "河海工程應用",
-        type: 2,
-      },
-      { time: "14:15 - 14:45", content: "茶敘", type: 0 },
-      { time: "14:45 - 16:00", content: "工業論壇", type: 0 },
-      { time: "16:00 - 17:00", content: "閉幕及頒獎", type: 0 },
-    ],
-  },
-};
-
+  // 5: "bg-gradient-to-tr from-blue-300/80 to-violet-100/80 text-blue-900/80 shadow-md shadow-sky-300/60",
+  // 6: "bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 text-emerald-800/80 shadow-md shadow-green-300/60", // green
 const MobileTable = () => {
+  const agendaTable: AgendaTableType = {
+    day1: {
+      name: "第一天",
+      list: [
+        { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
+        {
+          time: "09:30-10:20",
+          content: "⼤會演講1",
+          annotation: "蕭述三 講座教授",
+          type: 1,
+        },
+        { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+        {
+          time: "10:45 - 12:00",
+          content: "迷你論壇1",
+          annotation: "(中山科學研究院)",
+          type: 2,
+        },
+        { time: "12:00 - 13:00", content: "午餐", type: 0 },
+        {
+          time: "13:00 - 14:30",
+          content: "海報展⽰",
+          type: 3,
+        },
+        {
+          time: "14:30 - 15:40",
+          content: "迷你論壇2",
+          annotation: "國家太空中心 高速網路計算中心",
+          type: 2,
+        },
+        // { time: "15:40-16:10", content: "海報展覽 成果交流", type: 0 },
+        {
+          time: "15:40 - 17:30",
+          content: "海報展覽",
+          annotation: "成果交流",
+          type: 5,
+        },
+        { time: "18:00 - 20:00", content: "晚宴", type: 0 },
+      ],
+    },
+    day2: {
+      name: "第二天",
+      list: [
+        { time: "09:30 - 10:20", content: "/", type: 0 },
+        {
+          time: "09:30 - 10:20",
+          content: "⼤會演講2",
+          annotation: "Prof. Kunihiko Taira, UCLA",
+          type: 1,
+        },
+        { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+        {
+          time: "10:50 - 12:00",
+          content: "迷你論壇3",
+          annotation: "紊流模擬",
+          type: 2,
+        },
+        { time: "12:00 - 13:00", content: "午餐", type: 0 },
+        {
+          time: "13:00 - 14:15",
+          content: "迷你論壇4",
+          annotation: "河海工程應用",
+          type: 2,
+        },
+        { time: "14:15 - 14:45", content: "茶敘", type: 0 },
+        { time: "14:45 - 16:00", content: "工業論壇", type: 0 },
+        { time: "16:00 - 17:00", content: "閉幕及頒獎", type: 0 },
+      ],
+    },
+  };
+
   return (
     <div>
       <div className="w-full sm:hidden">
@@ -129,7 +125,7 @@ const MobileTable = () => {
                                 className={classNames(
                                   `mx-auto inline-block rounded-2xl px-4 py-1`,
                                   {
-                                    [tagStyle[item.type] as string]: true,
+                                    [tagStyle[item.type]]: true,
                                   }
                                 )}
                               >
@@ -187,7 +183,7 @@ const MobileTable = () => {
                             className={classNames(
                               `mx-auto inline-block rounded-2xl px-4 py-1`,
                               {
-                                [tagStyle[item.type] as string]: true,
+                                [tagStyle[item.type]]: true,
                               }
                             )}
                           >
@@ -207,7 +203,7 @@ const MobileTable = () => {
                               ) : (
                                 <div
                                   className={`${item?.annotation === "成果交流"
-                                      ? "font-normal text-gray-300/80"
+                                      ? "font-normal mx-auto inline-block rounded-2xl px-4 py-1 bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 text-emerald-800/80 shadow-md shadow-green-300/60"
                                       : ""
                                     }`}
                                 >
