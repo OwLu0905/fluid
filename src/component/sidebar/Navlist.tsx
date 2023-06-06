@@ -13,8 +13,8 @@ const menuls = [
   { id: 6, name: "註冊與報名", href: "/register" },
   { id: 7, name: "海報論文競賽", href: "/poster" },
   { id: 8, name: "流體力學之美展覽", href: "/exhibition" },
-  { id: 9, name: "住宿資訊", href: "/accommodation" },
-  { id: 10, name: "委員會", href: "/committee" },
+  { id: 9, name: "委員會", href: "/committee" },
+  { id: 10, name: "住宿資訊", href: "/accommodation" },
   { id: 11, name: "聯絡資訊", href: "/contact" },
   { id: 12, name: "交通資訊", href: "/traffic" },
 ];

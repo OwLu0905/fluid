@@ -4,7 +4,7 @@ import React from "react";
 
 const newTable = [
   {
-    time: "2023.06.03",
+    time: "2023.06.03.",
     content:
       "[更新] 大會議程中部分迷你論壇及工業論壇的順序有些微調整，目前已更新完畢。",
   },

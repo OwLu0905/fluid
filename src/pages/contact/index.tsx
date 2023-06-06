@@ -41,7 +41,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
           <Title as="h3">會議助理</Title>
           <ul className="space-y-2 text-base sm:text-lg lg:text-xl">
             <li>姓名：鄭哲榮</li>
