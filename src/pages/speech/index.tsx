@@ -29,9 +29,9 @@ const Speech = () => {
          <Title as="h2">大會演講2</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
           <br></br>
-          Speaker: Kunihiko Taira (Department of Mechanical and Aerospace Engineering University of California, Los Angeles) 
+          講者: Kunihiko Taira (Department of Mechanical and Aerospace Engineering University of California, Los Angeles) 
           <br></br>
-          Title: Data-Driven Analysis and Control of Extreme Aerodynamic Flows
+          題目: Data-Driven Analysis and Control of Extreme Aerodynamic Flows
           <br></br>
           <a href="https://drive.google.com/file/d/1FrkW_OcysSg4JircMI01Rx8Lx-3fiyqy/view?usp=share_link">
           Abstract
