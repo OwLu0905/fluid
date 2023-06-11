@@ -1,5 +1,6 @@
 import AppLayout from "@/component/layouts/AppLayout";
 import NextSEO from "@/component/layouts/NextSEO";
+import Card from "@/component/ui/Card";
 import Title from "@/component/utils/Title";
 import React from "react";
 
@@ -15,9 +16,10 @@ const Speech = () => {
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
-       <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
-        <Title as="h2">大會演講1</Title>
-        <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+        <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
+          {/* <Title as="h2">大會演講1</Title> */}
+          <Card></Card>
+          {/* <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
         <br></br>
           講者：蕭述三（中央大學機械工程學系）
           <br></br>
@@ -40,8 +42,8 @@ const Speech = () => {
           <a href="https://drive.google.com/file/d/1FpVMaYVfLQVCZ4RdSpPjgXD28t7fVFAR/view?usp=sharing">
           Biosketch
           </a>
-        </ol>
-      </div>
+        </ol> */}
+        </div>
       </section>
     </>
   );
