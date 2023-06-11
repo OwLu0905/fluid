@@ -34,7 +34,7 @@ const Card = () => {
         return (
           <Fragment key={e.id}>
             <Title as="h2">{e.category}</Title>
-            <div className="group mb-4 hidden h-full rounded-lg bg-gradient-to-br from-gray-700 via-gray-700/30 to-gray-700 px-8 py-6 xs:flex">
+            <div className="group mb-4 hidden h-full rounded-lg bg-gradient-to-br from-gray-700 via-gray-700/30 to-gray-700 px-2 py-4 xs:flex md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-4 flex h-[200px] w-[200px] items-center justify-center overflow-hidden">
                 <img
                   width={100}
@@ -56,7 +56,7 @@ const Card = () => {
                   <span className="text-gray-400">{e.title}</span>
                 </h4>
 
-                <ul className="-ml-2 flex text-base">
+                <ul className="-ml-2 hidden text-base">
                   <li className="">
                     <Link
                       href="/speech"
@@ -107,7 +107,7 @@ const Card = () => {
                 <span className="text-gray-400 xs:text-xl">{e.title}</span>
               </h4>
 
-              <ul className="my-4 -ml-4 flex text-base xs:-ml-0">
+              <ul className="my-4 -ml-4 hidden text-base xs:-ml-0">
                 <li className="">
                   <Link
                     href="/speech"
