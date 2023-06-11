@@ -1,0 +1,40 @@
+[
+    {
+        "id": 0,
+        "category": "大會演講1",
+        "name": "蕭述三",
+        "sub": "中央大學機械工程學系",
+        "title": "Mechanics of Powder Flows in Industrial Applications",
+        "img": "/speech/image1.jpg",
+        "abstract": "/speech?sub=1",
+        "descript": "/speech?sub=1",
+        "about": "",
+        "education": [
+            "Ph.D. ME, California Institute of Technology, 1993",
+            "M.S. ME, California Institute of Technology, 1989",
+            "B.S. ME, National Taiwan University, 1985"
+        ],
+        "position": [
+            "Chair Professor, Department of Mechanical Engineering, National Central University",
+            "Dean, Engineering College, National Central University",
+            "Convener of Hydrogen Energy Technology Project of National Science & Technology Council",
+            "PI, Talent Cultivation of Sustainable Energy Interdisciplinary Application Project of Ministry of Education",
+            "President, Society of Theoretical and Applied Mechanics, R.O.C.",
+            "President, Society of Smart Mechanical Engineering of Taoyuan City",
+            "Committee Member, Petitions and Appeals Committee of Ministry of Economic Affairs"
+        ]
+    },
+    {
+        "id": 1,
+        "category": "大會演講２",
+        "name": "Kunihiko Taira",
+        "sub": "Department of Mechanical and Aerospace Engineering University of California, Los Angeles",
+        "title": "Data-Driven Analysis and Control of Extreme Aerodynamic Flows",
+        "img": "/speech/image2.jpg",
+        "abstract": "/speech?sub=2",
+        "descript": "/speech?sub=2",
+        "about": "Kunihiko Taira is a Professor of Mechanical and Aerospace Engineering at UCLA working in the areas of unsteady aerodynamics and flow control, leveraging computational and data-driven techniques. Prior to joining his current institution, he was a faculty member at Florida State University. He received his B.S. from the University of Tennessee, Knoxville, and his M.S. and Ph.D. from the California Institute of Technology. He is a recipient of the AFOSR Young Investigator Award, the ONR Young Investigator Award, and the Vannevar Bush Faculty Fellowship. He is an Associate Fellow of the AIAA and serves as an associate editor for the AIAA Journal and the Theoretical and Computational Fluid Dynamics.",
+        "education": [],
+        "position": []
+    }
+]
