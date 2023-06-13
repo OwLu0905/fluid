@@ -55,16 +55,14 @@ const Navlist = () => {
           <Fragment key={item.name}>
             <li
               key={item.name}
-              className={`rounded-lg font-semibold hover:bg-gray-300/20 sm:text-lg md:text-xl xl:text-2xl ${
-                navActiveLink(item.href)
+              className={`rounded-lg font-semibold hover:bg-gray-300/20 sm:text-lg md:text-xl xl:text-2xl ${navActiveLink(item.href)
                   ? "rounded-lg bg-gray-500/20 font-semibold text-sky-300 transition-all duration-300 ease-in-out hover:border-none hover:bg-gray-100/40 active:bg-gray-300/60"
                   : "text-sky-400/80"
-              }`}
+                }`}
             >
               <Link
-                className={`flex w-full items-center justify-between px-4 py-2  ${
-                  navActiveLink(item.href) ? "px-8 py-2" : ""
-                }`}
+                className={`flex w-full items-center justify-between px-4 py-2  ${navActiveLink(item.href) ? "px-8 py-2" : ""
+                  }`}
                 href={item.href}
                 scroll={false}
               >
@@ -86,7 +84,6 @@ const Navlist = () => {
               item?.subMenu?.map((sub) => {
                 const subActive =
                   navActiveLink(item.href) && asPath === sub.href;
-                console.log(subActive, asPath, "subActivesubActive");
                 return (
                   <div key={sub.id}>
                     <Link
