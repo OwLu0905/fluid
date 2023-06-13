@@ -28,7 +28,7 @@ const menuls: IMenuList[] = [
   },
   { id: 5, name: "論壇發表", href: "/presentation" },
   { id: 6, name: "註冊與報名", href: "/register" },
-  { id: 7, name: "流體力學得獎名單", href: "/award" },
+  { id: 7, name: "流力學會得獎名單", href: "/award" },
   { id: 8, name: "海報論文競賽", href: "/poster" },
   { id: 9, name: "流體力學之美展覽", href: "/exhibition" },
   { id: 10, name: "委員會", href: "/committee" },

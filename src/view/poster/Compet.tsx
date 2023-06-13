@@ -31,7 +31,7 @@ const Compet = () => {
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
             4.
-            參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。
+            參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。<span className="text-red-500">不欲參賽者，繳交摘要及海報即可。</span>
           </p>
         </div>
       </li>
