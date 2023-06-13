@@ -20,8 +20,8 @@ const Speech = () => {
     sub !== undefined && +sub === 1
       ? "大會演講1 蕭述三"
       : sub !== undefined && +sub === 2
-        ? "大會演講2 Kunihiko Taira"
-        : "大會演講";
+      ? "大會演講2 Kunihiko Taira"
+      : "大會演講";
 
   return (
     <>
@@ -51,13 +51,10 @@ const Speech = () => {
           ) : (
             <Fragment key={speechSub[(+sub - 1) as number].id}>
               <Title as="h2">{speechSub[(+sub - 1) as number].category}</Title>
-              <Card>
+              <Card id="about">
                 <CardContent data={speechSub[(+sub - 1) as number]} />
                 <Abstract sub={sub as string} />
               </Card>
-              {/* <Card>
-                <Abstract sub={sub as string} />
-              </Card> */}
               <Card>
                 <Info sub={sub as string} />
               </Card>
