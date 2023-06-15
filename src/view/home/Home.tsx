@@ -39,12 +39,21 @@ const HomePage = () => {
               <li key={`date-essential-${item.id}`} className="">
                 <div className="flex flex-wrap space-x-1">
                   <h3 className="mr-2">{item.title}：</h3>
-                  <strong>
-                    <del>{essentialDate[index].time}</del>
-                  </strong>
-                  <strong>
-                    <time className="text-rose-700">{item.time}</time>
-                  </strong>
+                  {index !== 3 && (
+                    <>
+                      <strong>
+                        <del>{essentialDate[index].time}</del>
+                      </strong>
+                      <strong>
+                        <time className="text-rose-700">{item.time}</time>
+                      </strong>
+                    </>
+                  )}
+                  {index === 3 && (
+                    <strong>
+                      <time className="">{item.time}</time>
+                    </strong>
+                  )}
                 </div>
                 {index === 0 && (
                   <p className="my-1">

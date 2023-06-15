@@ -17,6 +17,12 @@ const essentialDate: DateListType[] = [
   { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
 ];
 
+const newEssentialDate: DateListType[] = [
+  { id: 1, title: "論文投稿截止日", time: "2023年7月03日（星期一）" },
+  { id: 2, title: "論文審查通知日", time: "2023年7月31日（星期一）" },
+  { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
+];
+
 const PosterPage = () => {
   return (
     <section className="mx-auto block w-full text-gray-300/80">
@@ -54,14 +60,26 @@ const PosterPage = () => {
       >
         <Title as="h2">重要日期</Title>
         <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
-          {essentialDate.map((item) => {
+          {newEssentialDate.map((item, index) => {
             return (
               <li key={`date-essential-${item.id}`}>
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap space-x-1">
                   <h3 className="mr-2">{item.title}：</h3>
-                  <strong>
-                    <time>{item.time}</time>
-                  </strong>
+                  {index !== 2 && (
+                    <>
+                      <strong>
+                        <del>{essentialDate[index].time}</del>
+                      </strong>
+                      <strong>
+                        <time className="text-rose-700">{item.time}</time>
+                      </strong>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <strong>
+                      <time className="">{item.time}</time>
+                    </strong>
+                  )}
                 </div>
               </li>
             );
