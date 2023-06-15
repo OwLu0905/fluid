@@ -43,7 +43,7 @@ const Fee = () => {
         <ul className="mb-6 space-y-4 indent-2 text-base sm:text-lg md:indent-4 md:text-xl lg:mb-8 lg:ml-4 xl:mb-10 xl:text-2xl">
           <div className="flex flex-col flex-wrap space-y-2">
             <p className="mr-2 font-normal">
-              註一：註冊費用早鳥優惠截止日：6月19日。
+              註一：註冊費用早鳥優惠截止日：<del>6月19日</del> <span className="font-bold text-rose-700">7月3日</span>。
             </p>
             <p className="mr-2 font-normal">
               註二：經繳費報名後恕不退費，收據於大會報到時領取。

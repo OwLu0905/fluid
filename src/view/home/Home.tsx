@@ -2,8 +2,23 @@ import Title from "@/component/utils/Title";
 import Image from "next/legacy/image";
 
 type DateListType = { id: number; title: string; time: string };
+
+const newEssentialDate: DateListType[] = [
+  {
+    id: 0,
+    title: "早鳥優惠報名截止日",
+    time: "2023年7月03日（星期一）",
+  },
+  { id: 1, title: "論文投稿截止日", time: "2023年7月03日（星期一）" },
+  { id: 2, title: "論文審查通知日", time: "2023年7月31日（星期一）" },
+  { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
+];
 const essentialDate: DateListType[] = [
-  { id: 0, title: "早鳥優惠報名截止日", time: "2023年6月19日（星期一）(參與會議住宿享飯店優惠價格，於6/19止，詳見住宿資訊）" },
+  {
+    id: 0,
+    title: "早鳥優惠報名截止日",
+    time: "2023年6月19日（星期一）",
+  },
   { id: 1, title: "論文投稿截止日", time: "2023年6月19日（星期一）" },
   { id: 2, title: "論文審查通知日", time: "2023年7月17日（星期一）" },
   { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
@@ -19,15 +34,23 @@ const HomePage = () => {
       <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
         <Title as="h2">重要日期</Title>
         <ul className="space-y-4 text-base sm:text-lg md:text-xl xl:text-2xl">
-          {essentialDate.map((item) => {
+          {newEssentialDate.map((item, index) => {
             return (
-              <li key={`date-essential-${item.id}`}>
-                <div className="flex flex-wrap">
+              <li key={`date-essential-${item.id}`} className="">
+                <div className="flex flex-wrap space-x-1">
                   <h3 className="mr-2">{item.title}：</h3>
                   <strong>
-                    <time>{item.time}</time>
+                    <del>{essentialDate[index].time}</del>
+                  </strong>
+                  <strong>
+                    <time className="text-rose-700">{item.time}</time>
                   </strong>
                 </div>
+                {index === 0 && (
+                  <p className="my-1">
+                    (參與會議住宿享飯店優惠價格，於7/03止，詳見住宿資訊）
+                  </p>
+                )}
               </li>
             );
           })}

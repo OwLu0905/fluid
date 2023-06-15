@@ -39,7 +39,7 @@ const FeeTable = () => {
               <p className="w-full text-center">身分/費用(NTD)</p>
             </div>
 
-            {titleTable.map((row) => {
+            {titleTable.map((row, index) => {
               return (
                 <div
                   key={row.title}
@@ -51,7 +51,17 @@ const FeeTable = () => {
                       <span className="relative inline-flex h-3 w-3 rounded-full bg-teal-300"></span>
                     </span>
                   )} */}
-                  <p>{row.title}</p>
+                  {index === 0 ? (
+                    <div>
+                      <del>{row.title}</del>
+                      <p className="font-bold text-rose-700">7/3之前</p>
+                    </div>
+                  ) : (
+                    <div>
+                      <del>{row.title}</del>
+                      <p className="font-bold text-rose-700">7/4之後</p>
+                    </div>
+                  )}
                   <p className="font-medium text-amber-300/80">{row.anno}</p>
                 </div>
               );

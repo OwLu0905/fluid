@@ -18,28 +18,27 @@ const RegisterMethod = () => {
         <li className="font-normal">
           線上報名表，表單連結如下：
           <ol className="mt-2 space-y-1 md:space-y-2">
-            <li className="flex flex-wrap">
+            <li className="flex flex-wrap md:space-x-2">
               （1）報名表單，
               <Link
                 rel="canonical"
-                title="請按此報名（6/19前）"
+                title="請按此報名（7/3前）"
                 href="https://forms.gle/ZFfPbqzLZ7CR2hGo7"
                 target="_blank"
-                className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+                className="flex items-center flex-wrap text-yellow-300/90 hover:text-yellow-300"
               >
                 <LinkIcon className="h-4 w-4" />
-                請按此報名（6/19前）
+                請按此報名（<del>6/19前</del><span className="text-rose-700 font-bold">7/3前</span>）
               </Link>
-              、
               <Link
                 rel="canonical"
-                title="請按此報名（6/20後）"
+                title="請按此報名（7/4後）"
                 href="https://forms.gle/xD3wototvBJfahAS9"
                 target="_blank"
-                className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+                className="flex items-center flex-wrap text-yellow-300/90 hover:text-yellow-300"
               >
                 <LinkIcon className="h-4 w-4" />
-                請按此報名（6/20後）
+                請按此報名（<del>6/20後</del><span className="text-rose-700 font-bold">7/4後</span>）
               </Link>
               。
             </li>
