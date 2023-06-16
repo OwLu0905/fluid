@@ -25,13 +25,13 @@ const Compet = () => {
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
             3.
-            本競賽結合論文與海報，參與者除繳交論文外，亦需展示海報，並於規定評分時間由一代表作者在海報旁負責回答問題與解說。若未出席，則視同放棄競賽。
+            <span className="text-red-500">本競賽（海報論文競賽）<strong>分別具有</strong>論文及海報，共兩個的競賽項目</span>。參與者須於規定評分時間中由一代表作者在海報旁負責回答問題與解說。若未出席，則視同放棄競賽。
           </p>
         </div>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
             4.
-            參與競賽者所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報，若缺漏繳交，則視同放棄參賽資格。<span className="text-red-500">不欲參賽者，繳交摘要及海報即可。</span>
+            <span className="text-red-500">參與論文競賽者</span>所繳交的研究內容，需提供：(1)摘要、(2)論文全文、及(3)海報。<span className="text-red-500">參與海報競賽者</span>所繳交的研究內容，僅需提供摘要及海報即可。若缺漏繳交，則視同放棄參賽資格。
           </p>
         </div>
       </li>

@@ -8,7 +8,7 @@ const Procedure = () => {
       <li>
         <div className="flex flex-wrap font-normal">
           <p>
-            1. 請於6月19日前，請由Google表單提交
+            1. 請於7月3日前，請由Google表單提交
             <strong>(a)摘要</strong>與 <strong>(b)論文全文</strong>。
           </p>
           <Link
@@ -34,7 +34,7 @@ const Procedure = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            3. 大會將於7月17日，寄送審查通知至您登記的信箱。
+            3. 大會將於7月31日，寄送審查通知至您登記的信箱。
           </p>
         </div>
       </li>
