@@ -9,7 +9,7 @@ import { tagStyle } from "./pc-table/pc-agenda";
 const MobileTable = () => {
   const agendaTable: AgendaTableType = {
     day1: {
-      name: "第一天",
+      name: "第一天 8/17",
       list: [
         { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
         {
@@ -48,7 +48,7 @@ const MobileTable = () => {
       ],
     },
     day2: {
-      name: "第二天",
+      name: "第二天 8/18",
       list: [
         { time: "09:30 - 10:20", content: "/", type: 0 },
         {

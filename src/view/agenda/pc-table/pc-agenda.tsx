@@ -22,7 +22,7 @@ const agendaPCTableBefore: {
     annotation?: string;
   }>[];
 } = {
-  name: ["第一天", "第二天"],
+  name: ["第一天 8月17日", "第二天 8月18日"],
   list: [
     [
       { time: "09:20 - 09:30", content: "研討會開幕", type: 0 },
@@ -72,7 +72,7 @@ const agendaPCTableAfter: {
     annotation?: string;
   }>[];
 } = {
-  name: ["第一天", "第二天"],
+  name: ["第一天 8月17日", "第二天 8月18日"],
   list: [
     [
       {
@@ -108,7 +108,7 @@ const PcAgendaTable = () => {
             return (
               <time
                 key={name}
-                className={`w-1/2 border-b-2 border-none border-gray-900/20 bg-blue-900/60  py-2 pl-4 text-center text-xl text-white  lg:py-4 lg:pl-8 xl:text-2xl ${index === 0 ? " " : " "
+                className={`w-1/2 border-b-2  border-gray-600 bg-blue-900/60 py-2 pl-4 text-center text-xl text-gray-300/80 font-medium  lg:py-4 lg:pl-8 xl:text-2xl ${index === 0 ? " " : " "
                   }`}
               >
                 {name}
