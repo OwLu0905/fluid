@@ -18,7 +18,7 @@ const essentialDate: DateListType[] = [
 ];
 
 const newEssentialDate: DateListType[] = [
-  { id: 1, title: "論文投稿截止日", time: "2023年7月03日（星期一）" },
+  { id: 1, title: "論文投稿截止日", time: "2023年7月06日（星期一）" },
   { id: 2, title: "論文審查通知日", time: "2023年7月31日（星期一）" },
   { id: 3, title: "海報上傳截止日", time: "2023年8月07日（星期一）" },
 ];
