@@ -31,10 +31,11 @@ const menuls: IMenuList[] = [
   { id: 7, name: "流力學會得獎名單", href: "/award" },
   { id: 8, name: "海報論文競賽", href: "/poster" },
   { id: 9, name: "流體力學之美展覽", href: "/exhibition" },
-  { id: 10, name: "委員會", href: "/committee" },
-  { id: 11, name: "住宿資訊", href: "/accommodation" },
-  { id: 12, name: "聯絡資訊", href: "/contact" },
-  { id: 13, name: "交通資訊", href: "/traffic" },
+  { id: 10, name: "評審委員名單", href: "/evaluation" },
+  { id: 11, name: "委員會", href: "/committee" },
+  { id: 12, name: "住宿資訊", href: "/accommodation" },
+  { id: 13, name: "聯絡資訊", href: "/contact" },
+  { id: 14, name: "交通資訊", href: "/traffic" },
 ];
 // <li className="peer/home hover:border-l-2 px-2 py-2 hover:border-amber-600 hover:text-gray-300 hover:bg-sky-400/10">
 const Navlist = () => {

@@ -54,12 +54,12 @@ const FeeTable = () => {
                   {index === 0 ? (
                     <div>
                       <del>{row.title}</del>
-                      <p className="font-bold text-rose-700">7/6之前</p>
+                      <p className="font-bold text-rose-700">7/06之前</p>
                     </div>
                   ) : (
                     <div>
                       <del>{row.title}</del>
-                      <p className="font-bold text-rose-700">7/4之後</p>
+                      <p className="font-bold text-rose-700">7/06之後</p>
                     </div>
                   )}
                   <p className="font-medium text-amber-300/80">{row.anno}</p>

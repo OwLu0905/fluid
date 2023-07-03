@@ -8,7 +8,7 @@ const Procedure = () => {
       <li>
         <div className="flex flex-wrap font-normal">
           <p>
-            1. 請於7月3日前，請由Google表單提交
+            1. 請於7月06日前，請由Google表單提交
             <strong>(a)摘要</strong>與 <strong>(b)論文全文</strong>。
           </p>
           <Link
