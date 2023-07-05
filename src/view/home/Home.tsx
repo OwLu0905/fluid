@@ -1,5 +1,6 @@
 import Title from "@/component/utils/Title";
 import Image from "next/legacy/image";
+import Link from "next/link";
 
 type DateListType = { id: number; title: string; time: string };
 
@@ -95,8 +96,28 @@ const HomePage = () => {
         <ul className="space-y-2 text-base sm:text-lg lg:text-2xl">
           <li> 臺灣流體力學學會</li>
           <li> 國科會工程司工程科技推廣中心</li>
-          <li> 國家高速網路與計算中心</li>
-          <li> 國家太空中心</li>
+          <li> 
+          <Link
+            rel="canonical"
+            title="國家高速網路與計算中心"
+            href="https://www.nchc.org.tw/"
+            target="_blank"
+            className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+          >
+          國家高速網路與計算中心
+          </Link>
+          </li>
+          <li>           
+          <Link
+            rel="canonical"
+            title="國家太空中心"
+            href="https://www.tasa.org.tw/"
+            target="_blank"
+            className="flex items-center text-yellow-300/90 hover:text-yellow-300"
+          >
+          國家太空中心
+          </Link>
+          </li>
           <li> 國立臺灣科技大學工學院</li>
           <li> 虎門科技股份有限公司</li>
           <li> 易富迪科技有限公司</li>
