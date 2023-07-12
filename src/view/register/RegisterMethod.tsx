@@ -38,7 +38,7 @@ const RegisterMethod = () => {
                 className="flex items-center flex-wrap text-yellow-300/90 hover:text-yellow-300"
               >
                 <LinkIcon className="h-4 w-4" />
-                請按此報名（<del>6/20後</del><span className="text-rose-700 font-bold">7/07後</span>）
+                請按此報名（<del>6/20後</del><span className="text-rose-700 font-bold">7/06-07/26</span>）
               </Link>
               。
             </li>

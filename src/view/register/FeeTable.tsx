@@ -59,7 +59,7 @@ const FeeTable = () => {
                   ) : (
                     <div>
                       <del>{row.title}</del>
-                      <p className="font-bold text-rose-700">7/06之後</p>
+                      <p className="font-bold text-rose-700">7/06-07/26</p>
                     </div>
                   )}
                   <p className="font-medium text-amber-300/80">{row.anno}</p>
