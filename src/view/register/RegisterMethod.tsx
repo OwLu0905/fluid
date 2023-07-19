@@ -25,20 +25,22 @@ const RegisterMethod = () => {
                 title="請按此報名（7/06前）"
                 href="https://forms.gle/ZFfPbqzLZ7CR2hGo7"
                 target="_blank"
-                className="flex items-center flex-wrap text-yellow-300/90 hover:text-yellow-300"
+                className="flex flex-wrap items-center text-yellow-300/90 hover:text-yellow-300"
               >
                 <LinkIcon className="h-4 w-4" />
-                請按此報名（<del>6/19前</del><span className="text-rose-700 font-bold">7/06前</span>）
+                請按此報名（<del>6/19前</del>
+                <span className="font-bold text-rose-700">7/06前</span>）
               </Link>
               <Link
                 rel="canonical"
                 title="請按此報名（7/07後）"
                 href="https://forms.gle/xD3wototvBJfahAS9"
                 target="_blank"
-                className="flex items-center flex-wrap text-yellow-300/90 hover:text-yellow-300"
+                className="flex flex-wrap items-center text-yellow-300/90 hover:text-yellow-300"
               >
                 <LinkIcon className="h-4 w-4" />
-                請按此報名（<del>6/20後</del><span className="text-rose-700 font-bold">7/06-07/26</span>）
+                請按此報名（<del>6/20後</del>
+                <span className="font-bold text-rose-700">7/06 - 7/26</span>）
               </Link>
               。
             </li>

@@ -52,15 +52,17 @@ const FeeTable = () => {
                     </span>
                   )} */}
                   {index === 0 ? (
-                    <div>
+                    <time className="flex flex-col items-center justify-center">
                       <del>{row.title}</del>
                       <p className="font-bold text-rose-700">7/06之前</p>
-                    </div>
+                    </time>
                   ) : (
-                    <div>
+                    <time className="flex flex-col items-center justify-center">
                       <del>{row.title}</del>
-                      <p className="font-bold text-rose-700">7/06-07/26</p>
-                    </div>
+                      <p className="whitespace-pre-wrap  text-rose-700">
+                        7/06 - 7/26
+                      </p>
+                    </time>
                   )}
                   <p className="font-medium text-amber-300/80">{row.anno}</p>
                 </div>
