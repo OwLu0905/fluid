@@ -12,7 +12,7 @@ const Fee = () => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
     try {
-      const buttonText = e.currentTarget.innerText;
+      // const buttonText = e.currentTarget.innerText;
       // await navigator.clipboard.writeText(buttonText);
       await navigator.clipboard.writeText(bancAccount);
       setIsCopy(true);
@@ -53,34 +53,36 @@ const Fee = () => {
           </li>
 
           <li>
-            <div className="flex flex-wrap">
-              <div className={classNames("mr-2 flex items-center font-normal")}>
-                3. 輸入劃撥帳號:
-                <button
-                  type="button"
+            <div
+              className={classNames(
+                "mr-2 flex w-full flex-wrap items-center font-normal"
+              )}
+            >
+              3. 輸入劃撥帳號:
+              <button
+                type="button"
+                onClick={clickToCopyHandler}
+                className={classNames("mx-2 font-bold text-gray-200/80", {
+                  "border-none ring-0 ring-cyan-600 ring-offset-2 ring-offset-cyan-600":
+                    isCopy,
+                })}
+              >
+                19826163
+              </button>
+              {!isCopy && (
+                <span
                   onClick={clickToCopyHandler}
-                  className={classNames("mx-2 font-bold text-gray-200/80", {
-                    "border-none ring-0 ring-teal-600 ring-offset-2 ring-offset-teal-600":
-                      isCopy,
-                  })}
+                  className="flex cursor-pointer items-center pr-2 text-sm text-slate-500/80"
                 >
-                  19826163
-                </button>
-                {!isCopy && (
-                  <span
-                    onClick={clickToCopyHandler}
-                    className="flex cursor-pointer items-center px-2 text-sm text-slate-500/80"
-                  >
-                    <ClipboardIcon className="mx-1 h-4 w-4" /> 複製
-                  </span>
-                )}
-                {isCopy && (
-                  <span className="flex items-center text-sm text-teal-600 ">
-                    <CheckIcon className="mx-1 h-4 w-4 rounded-full bg-teal-600 stroke-2 p-0.5 text-xl font-medium  text-gray-300" />
-                    <span>已經複製至剪貼簿</span>
-                  </span>
-                )}
-              </div>
+                  <ClipboardIcon className="mx-1 h-4 w-4" /> 複製
+                </span>
+              )}
+              {isCopy && (
+                <span className="flex items-center text-sm text-cyan-600 ">
+                  <CheckIcon className="mr-1 h-4 w-4 rounded-full bg-cyan-600 stroke-2 p-0.5 text-xl font-medium  text-gray-300" />
+                  <span>已複製到剪貼簿</span>
+                </span>
+              )}
             </div>
           </li>
 
