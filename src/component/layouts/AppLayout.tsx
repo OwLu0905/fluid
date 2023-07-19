@@ -3,7 +3,7 @@ import MobileNav from "../sidebar/MobileNav";
 import Navlist from "../sidebar/Navlist";
 import Container from "../ui/Container";
 import Footer from "./Footer";
-import Link from "next/link";
+
 const AppLayout: React.ElementType = ({ children }: any) => {
   return (
     <>
@@ -11,13 +11,13 @@ const AppLayout: React.ElementType = ({ children }: any) => {
         <MobileNav />
         <div
           className="mx-auto mb-0 mt-1 block md:mb-10 md:hidden"
-        // data-aos="fade-up"
-        // data-aos-anchor-placement="top-bottom"
+          // data-aos="fade-up"
+          // data-aos-anchor-placement="top-bottom"
         >
           <Image
-            src="./banner/NCFD_web_mobile_v5.jpg"
+            src="./banner/NCFD_web_mobile_v6.jpeg"
             width={1900}
-            height={780}
+            height={820}
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
             className="mx-auto block object-cover object-top"
@@ -29,9 +29,9 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           data-aos-duration="800"
         >
           <Image
-            src="./banner/NCFD_web_v10.jpg"
+            src="./banner/NCFD_web_v11.jpeg"
             width={1920}
-            height={740}
+            height={820}
             // height={570}
             alt="第28屆全國計算流體力學學術研討會"
             priority={true}
