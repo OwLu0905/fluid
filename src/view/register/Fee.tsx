@@ -14,6 +14,46 @@ const Fee = () => {
 
         <ul className="mb-6 space-y-4 text-base sm:text-lg md:text-xl lg:ml-4 lg:mb-8 xl:mb-10 xl:text-2xl">
           <li>
+            <div className="flex flex-wrap text-rose-700">
+              <p className="font-normal">
+                新增匯款方式(網路銀行)，流程如下：
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="flex flex-wrap">
+              <p className="mr-2 font-normal">1. 登入行動郵局</p>
+            </div>
+          </li>
+
+          <li>
+            <div className="flex flex-wrap">
+              <p className="mr-2 font-normal">
+                2. 轉入銀行選擇700中華郵政
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div className="flex flex-wrap">
+              <p className="mr-2 font-normal">
+              3. 輸入劃撥帳號:19826163
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div className="flex flex-wrap">
+              <p className="mr-2 font-normal">
+                4. 輸入備註: 麻煩填寫姓名
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul className="mb-6 space-y-4 text-base sm:text-lg md:text-xl lg:ml-4 lg:mb-8 xl:mb-10 xl:text-2xl">
+          <li>
             <div className="flex flex-wrap">
               <p className="font-normal">
                 本研討報名繳費統一採郵政劃撥方式匯款
