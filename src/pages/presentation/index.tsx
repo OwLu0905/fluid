@@ -16,7 +16,7 @@ const Presentation = () => {
         data-aos-anchor-placement="top-bottom"
       >
         <div className="mb-6 lg:ml-4 lg:mb-8 xl:mb-10">
-          <Title as="h2">迷你論壇1：中山科學研究院</Title>
+          <Title as="h2">迷你論壇 I：中山科學研究院</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
             講者：劉博文 （中科院航空所氣體動力組）
@@ -24,7 +24,7 @@ const Presentation = () => {
             題目：彈艙聲場和飛彈點火震波議題之數值分析與應用
           </ol>
           <Title as="h2">
-            迷你論壇2：國家太空中心 ＆ 國家高速網路與計算中心
+            迷你論壇 II：國家太空中心 ＆ 國家高速網路與計算中心
           </Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
@@ -39,7 +39,7 @@ const Presentation = () => {
             題目：High Fidelity Numerical Simulations of Physical Conservation Laws Using UNICONES -- Status Report
           </ol>
 
-          <Title as="h2">迷你論壇3：紊流模擬</Title>
+          <Title as="h2">迷你論壇 III：紊流模擬</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
             講者：李崇綱（國立成功大學機械工程學系）
@@ -62,7 +62,7 @@ const Presentation = () => {
             first-order: the resolvent mode
           </ol>
 
-          <Title as="h2">迷你論壇4：河海工程應用</Title>
+          <Title as="h2">迷你論壇 IV：河海工程應用</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
             講者：戴義欽（成大水利及海洋工程學系）

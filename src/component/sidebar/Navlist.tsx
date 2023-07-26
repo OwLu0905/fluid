@@ -22,8 +22,8 @@ const menuls: IMenuList[] = [
     name: "大會演講",
     href: "/speech",
     subMenu: [
-      { id: 0, name: "大會演講1", href: "/speech?sub=1" },
-      { id: 1, name: "大會演講2", href: "/speech?sub=2" },
+      { id: 0, name: "大會演講 I", href: "/speech?sub=1" },
+      { id: 1, name: "大會演講 II", href: "/speech?sub=2" },
     ],
   },
   { id: 5, name: "論壇發表", href: "/presentation" },

@@ -31,13 +31,13 @@ const agendaPCTableBefore: {
     [
       {
         time: "09:30 - 10:20",
-        content: "⼤會演講1",
+        content: "⼤會演講 I",
         annotation: "蕭述三 講座教授",
         type: 1,
       },
       {
         time: "09:30 - 10:20",
-        content: "⼤會演講2",
+        content: "⼤會演講 II",
         annotation: "Prof. Kunihiko Taira, UCLA",
         type: 1,
       },
@@ -49,13 +49,13 @@ const agendaPCTableBefore: {
     [
       {
         time: "10:45 - 12:00",
-        content: "迷你論壇1",
+        content: "迷你論壇 I",
         annotation: "(中山科學研究院)",
         type: 2,
       },
       {
         time: "10:50 - 12:00",
-        content: "迷你論壇3",
+        content: "迷你論壇 III",
         annotation: "紊流模擬",
         type: 2,
       },
@@ -77,7 +77,7 @@ const agendaPCTableAfter: {
     [
       {
         time: "14:30 - 15:40",
-        content: "迷你論壇2",
+        content: "迷你論壇 II",
         annotation: "國家太空中心 高速網路計算中心",
         type: 2,
       },

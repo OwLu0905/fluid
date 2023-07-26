@@ -48,7 +48,7 @@ const SpecialAgendaTable = () => {
 
             <div className="flex min-h-[7rem] flex-col py-4">
               <p className="mx-auto mt-2 inline-block rounded-2xl bg-gradient-to-tr from-sky-300/80 to-slate-300/80 px-4  py-1 text-sky-800 shadow-md shadow-sky-300/60 md:px-3 md:py-2 lg:px-4 xl:px-6">
-                迷你論壇4
+                迷你論壇 IV
               </p>
               <p className="my-1 mx-auto flex items-center text-center font-light text-yellow-600/80 sm:max-w-[8.5rem]  md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem]">
                 河海工程應用

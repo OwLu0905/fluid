@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "category": "大會演講1",
+        "category": "大會演講 I",
         "name": "蕭述三",
         "sub": "中央大學機械工程學系",
         "title": "Mechanics of Powder Flows in Industrial Applications",
@@ -26,7 +26,7 @@
     },
     {
         "id": 1,
-        "category": "大會演講２",
+        "category": "大會演講 II",
         "name": "Kunihiko Taira",
         "sub": "Department of Mechanical and Aerospace Engineering University of California, Los Angeles",
         "title": "Data-Driven Analysis and Control of Extreme Aerodynamic Flows",
