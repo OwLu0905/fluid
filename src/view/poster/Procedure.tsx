@@ -34,7 +34,7 @@ const Procedure = () => {
       <li>
         <div className="flex flex-wrap">
           <p className="mr-2 font-normal">
-            3. 大會將於7月31日，寄送審查通知至您登記的信箱。
+          3. <del>大會將於7月31日，寄送審查通知至您登記的信箱。</del><span className="font-bold text-rose-700">(所有遞交稿件皆已通過審查)</span>
           </p>
         </div>
       </li>
