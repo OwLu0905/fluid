@@ -19,7 +19,7 @@ const Presentation = () => {
           <Title as="h2">迷你論壇 I：中山科學研究院</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
-            講者：賴祐炫 博士 （中科院飛彈所液體推進組）
+            講者：賴祐炫 （中科院飛彈所液體推進組）
             <br></br>
             題目：計算流體力學應用於超然衝壓引擎分析的挑戰
           </ol>
