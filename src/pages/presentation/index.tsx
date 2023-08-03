@@ -19,9 +19,9 @@ const Presentation = () => {
           <Title as="h2">迷你論壇 I：中山科學研究院</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
-            講者：劉博文 （中科院航空所氣體動力組）
+            講者：賴祐炫 博士 （中科院飛彈所液體推進組）
             <br></br>
-            題目：彈艙聲場和飛彈點火震波議題之數值分析與應用
+            題目：計算流體力學應用於超然衝壓引擎分析的挑戰
           </ol>
           <Title as="h2">
             迷你論壇 II：國家太空中心 ＆ 國家高速網路與計算中心

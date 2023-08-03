@@ -18,9 +18,9 @@ const MobileTable = () => {
           annotation: "蕭述三 講座教授",
           type: 1,
         },
-        { time: "10:20 - 10:45", content: "茶敘", type: 0 },
+        { time: "10:20 - 10:50", content: "茶敘", type: 0 },
         {
-          time: "10:45 - 12:00",
+          time: "10:50 - 12:00",
           content: "迷你論壇 I",
           annotation: "(中山科學研究院)",
           type: 2,
@@ -57,9 +57,9 @@ const MobileTable = () => {
           annotation: "Prof. Kunihiko Taira, UCLA",
           type: 1,
         },
-        { time: "10:20 - 10:50", content: "茶敘", type: 0 },
+        { time: "10:20 - 10:45", content: "茶敘", type: 0 },
         {
-          time: "10:50 - 12:00",
+          time: "10:45 - 12:00",
           content: "迷你論壇 III",
           annotation: "紊流模擬",
           type: 2,
