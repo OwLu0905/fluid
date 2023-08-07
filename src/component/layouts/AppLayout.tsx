@@ -15,7 +15,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           // data-aos-anchor-placement="top-bottom"
         >
           <Image
-            src="./banner/NCFD_web_mobile_v6.jpeg"
+            src="./banner/NCFD_web_mobile_v7.jpeg"
             width={1900}
             height={820}
             alt="第28屆全國計算流體力學學術研討會"
@@ -29,7 +29,7 @@ const AppLayout: React.ElementType = ({ children }: any) => {
           data-aos-duration="800"
         >
           <Image
-            src="./banner/NCFD_web_v11.jpeg"
+            src="./banner/NCFD_web_v12.jpeg"
             width={1920}
             height={820}
             // height={570}
