@@ -20,7 +20,7 @@ const Footer = () => {
               聯絡我們
             </h3>
             <address className="not-italic">
-              臺北市大安區羅斯福路一段4號
+              臺北市大安區羅斯福路四段1號
             </address>
             <address className="group flex items-center not-italic hover:text-gray-300/80 hover:underline hover:decoration-cyan-300 hover:underline-offset-2">
               <a className="" href="tel:02-3366-5689">
