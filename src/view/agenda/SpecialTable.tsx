@@ -19,14 +19,15 @@ const SpecialAgendaTable = () => {
               <p className="mt-6">午餐</p>
             </div>
 
-            <div className="min-h-[7rem] py-4">
-              <p className="mx-3 mt-2 inline-block grow rounded-2xl bg-gradient-to-tr from-purple-300/80 to-violet-100/80 px-4 py-1 text-purple-800/80 shadow-md shadow-rose-300/60 md:px-3 md:py-2 lg:px-4 xl:px-6">
+            <div className="flex min-h-[7rem] w-full items-start justify-center py-4">
+              <p className="mx-3 mt-2 inline-block h-auto w-1/2 max-w-[170px] grow rounded-2xl bg-gradient-to-tr from-purple-300/80 to-violet-100/80 px-4 py-1 text-purple-800/80 shadow-md shadow-rose-300/60 md:px-3 md:py-2 lg:px-4 xl:px-6">
                 海報展⽰
               </p>
+
+              <div className="md:text-md my-2 mx-1 flex w-1/2 max-w-[6rem] shrink items-center rounded-xl px-1 py-1 text-sm font-semibold text-gray-300/80 sm:mx-2 sm:max-w-[6rem] sm:text-base md:max-w-[6rem] lg:max-w-[6rem] lg:text-lg xl:max-w-[8rem] xl:px-2 xl:text-2xl 2xl:max-w-[12rem]">
+                流體力學學會會員大會暨年輕學者獎頒獎
+              </div>
             </div>
-          </div>
-          <div className="md:text-md my-6 mx-2 flex max-w-[6rem] shrink items-center rounded-xl px-2 py-1 text-sm font-semibold text-gray-300/80 sm:mx-4 sm:max-w-[6rem] sm:text-base md:max-w-[6rem] lg:max-w-[6rem] lg:text-lg xl:max-w-[8rem] xl:px-4 xl:text-2xl 2xl:max-w-[12rem]">
-            流體力學學會會員大會暨年輕學者獎頒獎
           </div>
         </div>
       </div>

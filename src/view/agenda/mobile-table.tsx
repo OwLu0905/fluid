@@ -4,8 +4,6 @@ import { Tab } from "@headlessui/react";
 import type { AgendaTableType } from "./Table";
 import { tagStyle } from "./pc-table/pc-agenda";
 
-  // 5: "bg-gradient-to-tr from-blue-300/80 to-violet-100/80 text-blue-900/80 shadow-md shadow-sky-300/60",
-  // 6: "bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 text-emerald-800/80 shadow-md shadow-green-300/60", // green
 const MobileTable = () => {
   const agendaTable: AgendaTableType = {
     day1: {
@@ -107,7 +105,8 @@ const MobileTable = () => {
                   {posts.list.map((item) => {
                     if (
                       idx === 0 &&
-                      (item.content === "午餐" || item.content === "海報展⽰")
+                      // (item.content === "午餐" || item.content === "海報展⽰")
+                      item.content === "海報展⽰"
                     ) {
                       return (
                         <div
@@ -154,10 +153,11 @@ const MobileTable = () => {
                                   </div>
                                 ) : (
                                   <div
-                                    className={`${item?.annotation === "成果交流"
+                                    className={`${
+                                      item?.annotation === "成果交流"
                                         ? "font-normal text-gray-300/80"
                                         : ""
-                                      }`}
+                                    }`}
                                   >
                                     {item?.annotation}
                                   </div>
@@ -202,10 +202,11 @@ const MobileTable = () => {
                                 </div>
                               ) : (
                                 <div
-                                  className={`${item?.annotation === "成果交流"
-                                      ? "font-normal mx-auto inline-block rounded-2xl px-4 py-1 bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 text-emerald-800/80 shadow-md shadow-green-300/60"
+                                  className={`${
+                                    item?.annotation === "成果交流"
+                                      ? "mx-auto inline-block rounded-2xl bg-gradient-to-tr from-emerald-300/80 to-teal-100/80 px-4 py-1 font-normal text-emerald-800/80 shadow-md shadow-green-300/60"
                                       : ""
-                                    }`}
+                                  }`}
                                 >
                                   {item?.annotation}
                                 </div>
