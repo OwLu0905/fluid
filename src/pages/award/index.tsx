@@ -3,6 +3,7 @@ import React from "react";
 import AppLayout from "@/component/layouts/AppLayout";
 import NextSEO from "@/component/layouts/NextSEO";
 import Title from "@/component/utils/Title";
+import AwardPage from "@/view/award";
 
 const Award = () => {
   return (
@@ -17,7 +18,8 @@ const Award = () => {
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
-        <h3 className="text-2xl font-medium">建置中</h3>
+        {/*  <h3 className="text-2xl font-medium">建置中</h3> */}
+        <AwardPage />
       </section>
     </>
   );
