@@ -1,6 +1,7 @@
 import Title from "@/component/utils/Title";
 import React from "react";
 import evaluation from "@/data/evaluation.json" assert { type: "json" };
+import evaluation2 from "@/data/evaluation2.json" assert { type: "json" };
 
 const EvaluationPage = () => {
   return (
@@ -16,9 +17,32 @@ const EvaluationPage = () => {
             (按姓氏筆劃排列)
           </span>
         </Title>
-
+        <br></br>
+        <Title as="h2">
+          論文競賽
+        </Title>
         <ul className="flex flex-col sm:flex-row sm:flex-wrap ">
           {evaluation.map((item) => {
+            return (
+              <li
+                key={item.id}
+                className="mb-4 flex flex-col justify-center sm:mr-4 sm:w-[45%]"
+              >
+                <p className="text-lg font-bold text-gray-300/90 sm:mr-2 md:text-2xl">
+                  {item.name}
+                </p>
+                <p className="text-base font-light text-gray-300/80 md:text-xl">
+                  {item.org}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+        <Title as="h2">
+        海報競賽
+        </Title>
+        <ul className="flex flex-col sm:flex-row sm:flex-wrap ">
+          {evaluation2.map((item) => {
             return (
               <li
                 key={item.id}

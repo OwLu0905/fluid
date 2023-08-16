@@ -19,6 +19,10 @@ const Presentation = () => {
           <Title as="h2">迷你論壇 I：中山科學研究院</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
+            主持人 : 曾建洲 副教授
+          </ol>
+          <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+            <br></br>
             講者：賴祐炫 （中科院飛彈所液體推進組）
             <br></br>
             題目：計算流體力學應用於超然衝壓引擎分析的挑戰
@@ -34,6 +38,10 @@ const Presentation = () => {
           </Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
+            主持人 : 廖川傑 教授
+          </ol>
+          <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+            <br></br>
             講者：陳立杰 （國家太空中心） 
             <br></br>
             題目：CFD於入軌火箭開發之應用
@@ -46,6 +54,10 @@ const Presentation = () => {
           </ol>
 
           <Title as="h2">迷你論壇 III：紊流模擬</Title>
+          <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+            <br></br>
+            主持人 : 吳毓庭 教授
+          </ol>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
             講者：李崇綱（國立成功大學機械工程學系）
@@ -71,6 +83,10 @@ const Presentation = () => {
           <Title as="h2">迷你論壇 IV：河海工程應用</Title>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
+            主持人 : 李政賢 教授
+          </ol>
+          <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+            <br></br>
             講者：戴義欽（成大水利及海洋工程學系）
             <br></br>
             題目：Advancing Debris Flow Modeling and Large-Scale Simulation:
@@ -93,6 +109,10 @@ const Presentation = () => {
           </ol>
 
           <Title as="h2">工業論壇</Title>
+          <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
+            <br></br>
+            主持人 : 周鼎贏 助理教授
+          </ol>
           <ol className="mb-6 list-inside list-decimal space-y-4 text-base sm:text-lg md:indent-2 md:text-xl xl:text-2xl">
             <br></br>
             講者：林健文 技術副理（虎門科技）

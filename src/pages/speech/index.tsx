@@ -40,6 +40,8 @@ const Speech = () => {
               return (
                 <Fragment key={e.id}>
                   <Title as="h2">{e.category}</Title>
+                  <br></br>
+                  <Title as="h3">{e.host}</Title>
                   <Card>
                     <CardContent data={e}>
                       <CardFooter data={e} />
